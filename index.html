@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+    <!-- Modern Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Nuri Bugra Demir</title>
+    <meta name="theme-color" content="#0b0f17">
+    <title>Nuri Bugra Demir | Web & Digital Solutions</title>
 </head>
 <body>
     <main>
         <header>
             <div class="logo">
                 <h1 class="logo-name">Nuri Bugra Demir</h1>
-                <span class="job-title">Software Developer</span>
+                <span class="job-title">Web & Digital Solutions</span>
             </div>
 
             <div class="nav-btn">
@@ -35,53 +41,70 @@
                         <a href="#about" id="about-link" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" id="portfolio-link"  class="nav-link">Portfolio</a>
+                        <a href="#portfolio" id="portfolio-link" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a href="#articles" id="articles-link" class="nav-link">Articles</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" id="contact-link"  class="nav-link">Contact</a>
+                        <a href="#contact" id="contact-link" class="nav-link">Contact</a>
                     </li>
-                    <!-- Toggle Dark Mode
-                    <li class="nav-item">
-                        <div class="toggle-mode">
-                            <i class="bi bi-brightness-high-fill" id="toggleMode"></i>
-                        </div>
-                    </li>
-                    -->
                 </ul>
             </nav> 
         </header>
 
         <section class="home" id="home">
             <div class="greeting">
-                <h1 class="greeting-title">Hi! My Name Is</h1>
-                <span class="fname">Bugra</span>
+                <div class="availability-badge">
+                    <span class="status-dot"></span> Available for new projects
+                </div>
+                <h1 class="greeting-title">Fast, Modern & Impactful</h1>
+                <span class="fname">Digital Solutions</span>
                 <hr class="divider home-divider">
-                <p class="description">Web Development, Algorithm Design & Programming</p>
+                <p class="description">I partner with local businesses and SMBs to craft brand-aligned websites, zero-commission digital menus, and lightweight data architectures.</p>
+                <div class="cta-group">
+                    <a href="#portfolio" class="button btn-accent">View Selected Work ↓</a>
+                    <a href="#contact" class="button btn-secondary">Let's Talk</a>
+                </div>
             </div>
             <div class="main-img">
-                <img src="assets/img/main-img.png" alt="a programmer is sitting on a floor">
+                <!-- Şık Mockup Vitrini -->
+                <div class="hero-mockup-card">
+                    <div class="mockup-top-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="mockup-url">jakovs.com.tr</span>
+                    </div>
+                    <div class="mockup-preview">
+                        <span class="project-pill">Featured Project</span>
+                        <div class="mockup-img-wrap">
+                            <img src="assets/img/jakovs-preview.png" alt="Jakovs Coffee Web Redesign" class="mockup-thumb">
+                        </div>
+                        <h3>JAKOVS Social</h3>
+                        <p>Complete UI/UX & brand identity overhaul in 3 hours.</p>
+                        <a href="https://www.jakovs.com.tr/" target="_blank" class="mockup-btn">Live Preview ↗</a>
+                    </div>
+                </div>
             </div>
         </section>  
 
         <section class="about" id="about">
             <div class="card">
                 <div class="card-img">
-                    <img src="assets/img/profile-picture.png" alt="Profile Picture">
+                    <img src="assets/img/profile-picture.jpeg" alt="Profile Picture">
                 </div>
                 <div class="card-body">
                     <div class="box box-1">
-                        <h2 class="subtitle">Early Life & Experience</h2>
+                        <h2 class="subtitle">Field-Tested Approach</h2>
                         <p class="paragraph">
-                            Technology has been my area of interest since I was young. I have been passionate about learning how computers work and solving software issues, rather than playing computer games. These experiences played an important role in my career choice. Currently, I am interested in web development. 
+                            Combining my background in Computer Science with real-world service and communication experience, I bridge technical code and commercial impact. Instead of bloated frameworks, I deliver clean, fast, and maintainable systems for growing brands.
                         </p>
                     </div>
                     <div class="box box-2">
-                        <h2 class="subtitle">Education Details</h2>
+                        <h2 class="subtitle">Education & Focus</h2>
                         <p class="paragraph">
-                            Currently, I am studying Computer Science department at Dokuz Eylul University.
+                            Computer Science student at Dokuz Eylul University. Focused on web engineering, relational databases (SQL), and lightweight data-driven business tooling.
                         </p>
                     </div>
                 </div>
@@ -89,63 +112,92 @@
         </section>
 
         <section class="portfolio" id="portfolio">
-            <h1 class="main-title">My Projects</h1>
+            <h1 class="main-title">Selected Case Studies</h1>
             <hr class="divider general-divider">
-            <h1 class="loading">loading...</h1>
 
-            <a href="https://github.com/nuribugra" target="_blank" class="button">Click to see my other projects</a>
+            <!-- Case Study Kartları -->
+            <div class="case-studies-grid">
+                <!-- Proje 1: Jakovs -->
+                <article class="case-card">
+                    <div class="case-img-wrap">
+                        <img src="assets/img/jakovs-preview.png" alt="Jakovs Coffee Web Redesign">
+                    </div>
+                    <div class="card-tags">
+                        <span class="badge">UI/UX Revamp</span>
+                        <span class="badge">Local Business</span>
+                        <span class="badge">Branding</span>
+                    </div>
+                    <h2 class="case-title">Jakovs Coffee – Web Experience Redesign</h2>
+                    <p class="case-desc">
+                        Replaced generic templates with a deep, mythic-inspired color scheme matching the physical shop's stone reliefs and warm atmosphere. Streamlined visual hierarchy and gallery layouts.
+                    </p>
+                    <div class="case-metrics">
+                        <div>
+                            <strong>3 Hours</strong>
+                            <span>Rapid Delivery</span>
+                        </div>
+                        <div>
+                            <strong>100%</strong>
+                            <span>Brand Curation</span>
+                        </div>
+                    </div>
+                    <a href="https://www.jakovs.com.tr/" target="_blank" class="button btn-accent">Visit Live Site ↗</a>
+                </article>
+
+                <!-- Proje 2: QR & Data -->
+                <article class="case-card">
+                    <div class="card-tags">
+                        <span class="badge">Python</span>
+                        <span class="badge">SQLite</span>
+                        <span class="badge">Analytics</span>
+                    </div>
+                    <h2 class="case-title">Smart QR Menu & Event Analytics Engine</h2>
+                    <p class="case-desc">
+                        A commission-free digital menu architecture backed by Python and SQLite. Captures item click events to deliver sales trends and peak hour insights to business owners.
+                    </p>
+                    <div class="case-metrics">
+                        <div>
+                            <strong>0 $ / mo</strong>
+                            <span>No SaaS Lock-in</span>
+                        </div>
+                        <div>
+                            <strong>Fast</strong>
+                            <span>Mobile Flow</span>
+                        </div>
+                    </div>
+                    <span class="status-tag">MVP In Development</span>
+                </article>
+            </div>
+
+            <div class="more-projects">
+                <a href="https://github.com/nuribugra" target="_blank" class="button">Explore GitHub Repositories ↗</a>
+            </div>
         </section>
 
         <section class="articles" id="articles">
-            <h1 class="main-title">My Articles</h1>
+            <h1 class="main-title">Writing & Insights</h1>
             <hr class="divider general-divider">
-            <div id="articles-container">
-                <!-- Articles will be dynamically added here -->
-                <!-- <div class="article-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Article 1" class="article-image">
-                    <div class="article-details">
-                        <h2 class="article-title">Sample Article 1</h2>
-                        <p class="article-excerpt">This is a brief excerpt of the first sample article...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Article 2" class="article-image">
-                    <div class="article-details">
-                        <h2 class="article-title">Sample Article 2</h2>
-                        <p class="article-excerpt">Here's a short excerpt from the second sample article...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Article 3" class="article-image">
-                    <div class="article-details">
-                        <h2 class="article-title">Sample Article 3</h2>
-                        <p class="article-excerpt">And this is an excerpt from the third sample article...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div> -->
+            <div class="coming-soon-card">
+                <div class="coming-soon-icon">✍️</div>
+                <h3>Articles Coming Soon</h3>
+                <p>I'm currently documenting my findings on web performance, local business digital transformations, and lightweight data tooling. Stay tuned!</p>
             </div>
-            <div id="pagination"></div>
-            <div id="article-details" style="display: none;"></div>
         </section>
 
         <section class="contact" id="contact">
-            <h1 id="contactTitle">Let's work together...</h1>
+            <h1 id="contactTitle">Let's build something impactful.</h1>
+            <p class="contact-subtitle">Whether modernizing your storefront or developing a custom data solution, let's talk over coffee.</p>
             <div class="social-box">
-                <a href="https://www.linkedin.com/in/nuribugrademir" target="_blank"><i class="fa-brands fa-linkedin"></i> </i> LinkedIn</a>
-
-                <a href="https://github.com/nuribugra" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-
+                <a href="https://www.linkedin.com/in/nuribugrademir" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/nuribugra" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 <a href="https://twitter.com/nuribugrademir" target="_blank"><i class="fa-brands fa-square-x-twitter"></i> Twitter X</a>
-                
-                <a href="mailto:bugranuri.demir@gmail.com"><i class="fa-solid fa-at"></i> Send a mail</a>
+                <a href="mailto:bugranuri.demir@gmail.com"><i class="fa-solid fa-at"></i> bugranuri.demir@gmail.com</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p><i class="fa-regular fa-copyright"></i> Copyright 2023, Nuri Buğra Demir</p>
+        <p><i class="fa-regular fa-copyright"></i> 2026 Nuri Buğra Demir. All rights reserved.</p>
     </footer>
     
     <script src="js/main.js"></script>
