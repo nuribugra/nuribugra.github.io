@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haus Pera Coffee — QR Menü · Nuri Buğra Demir</title>
+  <meta name="description" content="Haus Pera Coffee için QR'dan açılan mobil menü ve korumalı admin paneli.">
+  <meta name="theme-color" content="#0c0b0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=8">
+  <link rel="stylesheet" href="/assets/css/project.css?v=8">
+  <script type="module" src="/assets/js/project.js?v=8"></script>
+</head>
+<body class="project-page">
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+
+  <nav class="topbar" aria-label="Sayfa">
+    <a class="topbar__back" href="/?proje=haus-pera#projeler"><span aria-hidden="true">←</span> Projeler</a>
+    <a class="topbar__name" href="/">Nuri Buğra Demir</a>
+  </nav>
+
+  <main id="icerik">
+    <!-- Başlangıç: gerçek mobil menü ekranı -->
+    <header class="p-hero">
+      <div class="p-hero__stage">
+        <div class="p-hero__device">
+          <div class="screen screen--portrait p-hero__screen">
+            <img src="/assets/img/haus-pera-menu.webp" width="921" height="1718"
+                 alt="Haus Pera Coffee QR menüsünün telefondaki açılış ekranı: arama kutusu ve kategori kartları"
+                 data-placeholder="Haus Pera mobil menü">
+          </div>
+        </div>
+        <div class="p-hero__line" aria-hidden="true"></div>
+      </div>
+
+      <div class="p-hero__text">
+        <p class="p-kicker">Müşteri işi</p>
+        <h1 class="p-title">Haus Pera Coffee <span>QR Menü</span></h1>
+        <p class="p-lede">
+          Haus Pera Coffee'de kullanılan dijital menü. Misafirler masadaki kodu okutarak menüye
+          telefonlarından ulaşıyor; işletme ise ürün ve fiyatlarını kendi yönetim panelinden güncelliyor.
+        </p>
+        <dl class="p-facts">
+          <div><dt>Kapsam</dt><dd>Mobil menü ve yönetim paneli</dd></div>
+          <div><dt>Altyapı</dt><dd>Next.js · PostgreSQL · Vercel</dd></div>
+        </dl>
+      </div>
+    </header>
+
+    <!-- Müşteri akışı -->
+    <section class="p-section" aria-labelledby="musteri">
+      <div class="p-section__head">
+        <p class="p-kicker">01 — Misafir deneyimi</p>
+        <h2 id="musteri" class="p-h2">Masadan menüye</h2>
+      </div>
+
+      <ol class="flow">
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame flow__frame--card">
+              <img src="/assets/img/haus-pera-qr-kart.webp" width="960" height="1353" loading="lazy"
+                   alt="Haus Pera masa kartı: tuğla kemerli pencere çizimi içinde QR kod ve “Menümüzü görüntülemek için QR kodu okutun” yazısı"
+                   data-placeholder="Haus Pera QR masa kartı">
+            </div>
+            <figcaption>
+              <span class="flow__num">1</span>
+              <strong>Kodu okutun</strong>
+              Her masada menüye yönlendiren bir QR kart bulunuyor; telefon kamerasıyla okutmak yeterli.
+            </figcaption>
+          </figure>
+        </li>
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/haus-pera-menu.webp" width="921" height="1718" loading="lazy"
+                     alt="Telefonda açılan menü: kategori kartları ve arama kutusu"
+                     data-placeholder="Haus Pera mobil menü">
+              </div>
+            </div>
+            <figcaption>
+              <span class="flow__num">2</span>
+              <strong>Menü telefonda açılır</strong>
+              Herhangi bir uygulama gerektirmeden tarayıcıda açılıyor. Kategoriler ve arama tek ekranda.
+            </figcaption>
+          </figure>
+        </li>
+      </ol>
+    </section>
+
+    <!-- İşletme akışı -->
+    <section class="p-section" aria-labelledby="isletme">
+      <div class="p-section__head">
+        <p class="p-kicker">02 — İşletme yönetimi</p>
+        <h2 id="isletme" class="p-h2">Fiyatlar işletmenin elinde</h2>
+      </div>
+
+      <ol class="flow">
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/haus-pera-admin-fiyat.webp" width="921" height="1664" loading="lazy"
+                     alt="Yönetim panelinde Kahveler listesi: Latte'nin sıcak fiyat alanı 205,00 olarak düzenleniyor, yanında Kaydet ve İptal düğmeleri"
+                     data-placeholder="Yönetim paneli, fiyat düzenleme">
+              </div>
+            </div>
+            <figcaption>
+              <span class="flow__num">1</span>
+              <strong>Fiyat panelden güncellenir</strong>
+              İşletme, şifreyle korunan yönetim paneline giriş yapıp ilgili ürünün fiyatını değiştiriyor.
+              Örnekte Latte'nin sıcak fiyatı düzenleniyor.
+            </figcaption>
+          </figure>
+        </li>
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/haus-pera-menu-urunler.webp" width="921" height="1700" loading="lazy"
+                     alt="Müşteri menüsünde Kahveler listesi: Latte sıcak 205,00 TL, soğuk 215,00 TL olarak görünüyor"
+                     data-placeholder="Menüde ürün listesi">
+              </div>
+            </div>
+            <figcaption>
+              <span class="flow__num">2</span>
+              <strong>Menü aynı anda güncellenir</strong>
+              Değişiklik kaydedildiği anda menüye yansıyor; kodu okutan bir sonraki misafir Latte'yi güncel fiyatıyla görüyor.
+              Geliştiriciye ya da yeniden baskıya gerek kalmıyor.
+            </figcaption>
+          </figure>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Teknik kararlar -->
+    <section class="p-section p-section--tech" aria-labelledby="kararlar">
+      <div class="p-section__head">
+        <p class="p-kicker">03 — Yaklaşım</p>
+        <h2 id="kararlar" class="p-h2">Sade bir altyapı</h2>
+      </div>
+
+      <div class="decisions">
+        <article class="decision">
+          <h3>Tek uygulama</h3>
+          <p>
+            Misafirlerin gördüğü menü ve işletmenin yönetim paneli, Next.js ile geliştirilmiş tek bir uygulamada
+            bir arada çalışıyor. Bakım ve güncellemeler tek bir yerden yapılıyor.
+          </p>
+        </article>
+        <article class="decision">
+          <h3>Tek parça menü</h3>
+          <p>
+            Menünün tamamı veritabanında tek bir kayıt olarak saklanıyor. Menü her zaman bir bütün olarak
+            görüntülenip kaydedildiği için bu yapı sade ve yönetimi kolay bir çözüm sunuyor.
+          </p>
+        </article>
+        <article class="decision">
+          <h3>Hazır tutulan menü</h3>
+          <p>
+            Menü, her ziyarette veritabanından yeniden okunmak yerine sunucuda hazır tutuluyor. İşletme bir
+            değişikliği kaydettiğinde bu kopya yenileniyor; böylece misafirler her zaman güncel menüyü görüyor.
+          </p>
+        </article>
+      </div>
+
+      <p class="p-next-note">Sıradaki adımlar: dinamik QR kod ve birden fazla işletmenin kullanabileceği bir sürüm.</p>
+    </section>
+
+    <nav class="p-footer" aria-label="Projeler arası">
+      <a href="/?proje=haus-pera#projeler"><span aria-hidden="true">←</span> Tüm projeler</a>
+      <a class="p-footer__next" href="/projeler/jakovs/">
+        <span class="p-kicker">Diğer proje</span>
+        Jakovs Coffee <span aria-hidden="true">→</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

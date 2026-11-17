@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jakovs Coffee — Web sitesi yenilemesi · Nuri Buğra Demir</title>
+  <meta name="description" content="Jakovs Coffee'nin hazır web sitesinin mekânın kimliğine göre yeniden düzenlenmesi.">
+  <meta name="theme-color" content="#0c0b0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=8">
+  <link rel="stylesheet" href="/assets/css/project.css?v=8">
+  <script type="module" src="/assets/js/project.js?v=8"></script>
+</head>
+<body class="project-page">
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+
+  <nav class="topbar" aria-label="Sayfa">
+    <a class="topbar__back" href="/?proje=jakovs#projeler"><span aria-hidden="true">←</span> Projeler</a>
+    <a class="topbar__name" href="/">Nuri Buğra Demir</a>
+  </nav>
+
+  <main id="icerik">
+    <!-- Başlangıç: yenilenen ana sayfanın gerçek ekran görüntüsü -->
+    <header class="p-hero p-hero--wide">
+      <div class="p-hero__stage">
+        <div class="p-hero__device">
+          <div class="screen screen--landscape p-hero__screen p-hero__screen--jakovs">
+            <img src="/assets/img/jakovs-home-1900.webp"
+                 srcset="/assets/img/jakovs-home-960.webp 960w, /assets/img/jakovs-home-1900.webp 1900w"
+                 sizes="(min-width: 900px) min(80vw, 1100px), 92vw"
+                 width="1900" height="862"
+                 alt="Yenilenen Jakovs ana sayfası: koyu yeşil başlık, buzlu kahve fotoğrafı ve ΙΑΚΩΒΟΣ yazısı"
+                 data-placeholder="Jakovs ana sayfa">
+          </div>
+        </div>
+        <div class="p-hero__line" aria-hidden="true"></div>
+      </div>
+
+      <div class="p-hero__text">
+        <div>
+          <p class="p-kicker">Yeniden tasarım</p>
+          <h1 class="p-title">Jakovs Coffee <span>Web sitesi yenilemesi</span></h1>
+        </div>
+        <div class="p-hero__aside">
+          <p class="p-lede">
+            İşletme, web sitesini Turhost üzerinden hazır bir hizmet olarak almıştı. Bu hazır siteyi,
+            mekânın sıcak atmosferinden ve taş rölyeflerinden yola çıkarak yeniden düzenledim;
+            görsel hiyerarşiyi ve galeri düzenini baştan kurdum.
+          </p>
+          <dl class="p-facts">
+            <div><dt>Başlangıç</dt><dd>Turhost hazır web sitesi</dd></div>
+            <div><dt>Odak</dt><dd>Renk, görsel dil, sayfa düzeni, galeri</dd></div>
+          </dl>
+          <a class="p-live" href="https://www.jakovs.com.tr/" target="_blank" rel="noopener">
+            Canlı siteyi görüntüle <span aria-hidden="true">↗</span>
+            <span class="sr-only">(jakovs.com.tr, yeni sekmede açılır)</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Önce / sonra -->
+    <section class="p-section" aria-labelledby="once-sonra">
+      <div class="p-section__head">
+        <p class="p-kicker">01 — Önce ve sonra</p>
+        <h2 id="once-sonra" class="p-h2">Hazır şablondan mekânın kendi kimliğine</h2>
+      </div>
+
+      <figure class="compare" data-compare>
+        <div class="compare__stage" data-compare-stage>
+          <img class="compare__img" src="/assets/img/jakovs-once.webp" width="1600" height="583"
+               alt="Önceki site: açık fıstık yeşili başlık, genel bir kahve fincanı fotoğrafı ve ortalanmış JAKOVS yazısı">
+          <div class="compare__after" data-compare-after>
+            <img class="compare__img" src="/assets/img/jakovs-sonra.webp" width="1600" height="583"
+                 alt="Yenilenen site: koyu yeşil başlık, mekânın amblemi ve kendi buzlu kahve fotoğrafı">
+          </div>
+          <span class="compare__label compare__label--before" aria-hidden="true">Önce</span>
+          <span class="compare__label compare__label--after" aria-hidden="true">Sonra</span>
+          <div class="compare__divider" aria-hidden="true"></div>
+          <button class="compare__handle" type="button" role="slider" data-compare-handle
+                  aria-label="Önce ve sonra karşılaştırması" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+                  aria-valuetext="Yüzde 50 sonra">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg>
+          </button>
+        </div>
+        <figcaption class="compare__hint">Çizgiyi sürükleyin ya da ok tuşlarını kullanın.</figcaption>
+      </figure>
+
+      <ul class="changes">
+        <li>
+          <h3>Renk</h3>
+          <p>Hazır şablonun canlı fıstık yeşili, koyu yeşil ve sıcak krem tonlarıyla değiştirildi.</p>
+        </li>
+        <li>
+          <h3>Görseller</h3>
+          <p>Genel bir kahve fotoğrafının yerine mekânın kendi ürün ve atmosfer fotoğrafları kullanıldı.</p>
+        </li>
+        <li>
+          <h3>Kimlik</h3>
+          <p>Yazı ile oluşturulmuş logo yerine mekânın amblemi öne çıkarıldı; karşılama alanındaki başlık ve tanıtım metni birbirinden ayrıldı.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Yeni ana sayfanın tamamı -->
+    <section class="p-section" aria-labelledby="sayfa">
+      <div class="p-section__head">
+        <p class="p-kicker">02 — Yeni ana sayfa</p>
+        <h2 id="sayfa" class="p-h2">Baştan sona bir akış</h2>
+        <p class="p-section__lede">
+          Karşılama alanından sonra hizmet anlayışı, mekândan kareler ve iletişim bilgileri sırasıyla geliyor.
+          Galeri, mekânın farklı köşelerini ve ürünlerini aynı düzende bir araya getiriyor; sayfa, taş rölyefli
+          duvarın önünde çekilmiş bir fotoğrafla kapanıyor.
+        </p>
+      </div>
+
+      <figure class="fullpage" data-fullpage>
+        <div class="fullpage__frame" data-fullpage-frame id="tam-sayfa">
+          <img src="/assets/img/jakovs-tam-sayfa-1400.webp"
+               srcset="/assets/img/jakovs-tam-sayfa-800.webp 800w, /assets/img/jakovs-tam-sayfa-1400.webp 1400w"
+               sizes="(min-width: 900px) 760px, 92vw"
+               width="1400" height="3706" loading="lazy"
+               alt="Yenilenen Jakovs ana sayfasının tamamı: karşılama alanı, hizmet anlayışı, fotoğraf galerisi, taş rölyef önünde çekilmiş fotoğraf ve iletişim bilgileri">
+        </div>
+        <button class="fullpage__toggle" type="button" data-fullpage-toggle aria-expanded="false" aria-controls="tam-sayfa">
+          Sayfanın tamamını göster
+        </button>
+      </figure>
+    </section>
+
+    <!-- Mobil görünüm -->
+    <section class="p-section" aria-labelledby="mobil">
+      <div class="p-section__head">
+        <p class="p-kicker">03 — Mobil görünüm</p>
+        <h2 id="mobil" class="p-h2">Telefonda tek sütun</h2>
+      </div>
+
+      <ul class="flow flow--pair">
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/jakovs-mobil-ana.webp" width="921" height="1718" loading="lazy"
+                     alt="Jakovs ana sayfasının telefondaki görünümü: amblem, menü düğmesi, ΙΑΚΩΒΟΣ başlığı ve tanıtım metni"
+                     data-placeholder="Jakovs mobil ana sayfa">
+              </div>
+            </div>
+            <figcaption>
+              <strong>Ana sayfa</strong>
+              Menü bağlantıları tek bir düğmede toplanıyor; karşılama alanı ve tanıtım metni ekrana tek sütun halinde yerleşiyor.
+            </figcaption>
+          </figure>
+        </li>
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/jakovs-mobil-galeri.webp" width="921" height="1710" loading="lazy"
+                     alt="Jakovs resim galerisinin telefondaki görünümü: tanıtım yazısı ve iki sütunlu fotoğraf ızgarası"
+                     data-placeholder="Jakovs mobil galeri">
+              </div>
+            </div>
+            <figcaption>
+              <strong>Resim galerisi</strong>
+              Galeri telefonda iki sütunlu bir ızgaraya dönüşüyor; taş rölyef önündeki kareler ve mekân fotoğrafları aynı düzende sıralanıyor.
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <nav class="p-footer" aria-label="Projeler arası">
+      <a href="/?proje=jakovs#projeler"><span aria-hidden="true">←</span> Tüm projeler</a>
+      <a class="p-footer__next" href="/projeler/haus-pera/">
+        <span class="p-kicker">Diğer proje</span>
+        Haus Pera Coffee <span aria-hidden="true">→</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

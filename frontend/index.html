@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuri Buğra Demir</title>
+  <meta name="description" content="Nuri Buğra Demir — web geliştirme portföyü.">
+  <meta name="theme-color" content="#0c0b0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=8">
+  <script type="module" src="assets/js/main.js?v=8"></script>
+</head>
+<body>
+  <a class="skip" href="#projeler">Projelere geç</a>
+
+  <header class="intro">
+    <h1 class="intro__name">Nuri Buğra<br>Demir</h1>
+    <p class="intro__lede">Web arayüzleri ve backend geliştiriyorum. Aşağıda müşteriler için yaptığım işler var.</p>
+  </header>
+
+  <main>
+    <section class="showcase" id="projeler" aria-roledescription="carousel" aria-label="Projeler">
+      <div class="showcase__stage" data-stage tabindex="0" aria-label="Proje vitrini. Sol ve sağ ok tuşlarıyla proje değiştirin.">
+        <div class="showcase__wheel" data-wheel></div>
+        <div class="showcase__selector" aria-hidden="true"></div>
+      </div>
+
+      <div class="showcase__bar">
+        <div class="showcase__caption" data-caption aria-live="polite"></div>
+        <div class="showcase__controls">
+          <a class="showcase__link" data-link href="#">Projeyi incele <span aria-hidden="true">→</span></a>
+          <span class="showcase__count" data-count aria-hidden="true"></span>
+          <button class="arrow" type="button" data-prev aria-label="Önceki proje">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="arrow" type="button" data-next aria-label="Sonraki proje">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <noscript><p class="showcase__noscript">Proje vitrini için JavaScript gerekiyor.</p></noscript>
+    </section>
+  </main>
+</body>
+</html>
