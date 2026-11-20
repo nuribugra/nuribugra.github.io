@@ -9,11 +9,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=8">
-  <script type="module" src="assets/js/main.js?v=8"></script>
+  <link rel="stylesheet" href="assets/css/main.css?v=13">
+  <script type="module" src="assets/js/main.js?v=13"></script>
 </head>
 <body>
   <a class="skip" href="#projeler">Projelere geç</a>
+
+  <nav class="site-nav" aria-label="Ana menü">
+    <a href="#projeler">Projeler</a>
+    <a href="/articles/">Yazılar</a>
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
 
   <header class="intro">
     <h1 class="intro__name">Nuri Buğra<br>Demir</h1>
@@ -43,6 +50,76 @@
 
       <noscript><p class="showcase__noscript">Proje vitrini için JavaScript gerekiyor.</p></noscript>
     </section>
+
+    <section class="about" id="hakkimda" aria-labelledby="hakkimda-baslik">
+      <figure class="about__portrait">
+        <img src="assets/img/portre.webp" width="746" height="933" loading="lazy"
+             alt="Nuri Buğra Demir, ahşap kaplamalı bir duvarın önünde kollarını kavuşturmuş duruyor">
+      </figure>
+      <div class="about__text">
+        <p class="kicker">Hakkımda</p>
+        <h2 id="hakkimda-baslik" class="section-title">Merhaba, ben Buğra.</h2>
+        <p>
+          Dokuz Eylül Üniversitesi'nde Bilgisayar Bilimleri okuyorum. Son dönemde ağırlığı backend
+          tarafına verdim: TypeScript, Express ve PostgreSQL ile bir isteğin sunucuda nasıl karşılandığını,
+          verinin nasıl saklanıp sunulduğunu öğreniyor ve uyguluyorum. Bu sitenin arka tarafını da
+          aynı süreçte kendim kuruyorum.
+        </p>
+        <p>
+          Bir yandan da yerel işletmeler için web projeleri yapıyorum. Haus Pera'nın QR menüsü ve
+          Jakovs'un web sitesi bunlardan ikisi; ikisi de şu an işletmelerde kullanılıyor.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="iletisim" aria-labelledby="iletisim-baslik">
+      <div class="contact__head">
+        <div>
+          <h2 id="iletisim-baslik" class="contact__title">İletişim</h2>
+          <p class="contact__sub">
+            Dokuz Eylül Üniversitesi, Bilgisayar Bilimleri<br>
+            TypeScript · Express · PostgreSQL
+          </p>
+        </div>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:bugranuri.demir@gmail.com">
+            E-posta gönder <span aria-hidden="true">→</span>
+          </a>
+          <button class="btn btn--ghost" type="button" data-copy="bugranuri.demir@gmail.com">
+            Adresi kopyala
+          </button>
+          <span class="contact__status" data-copy-status role="status" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <dl class="contact__grid">
+        <div class="contact__item">
+          <dt>E-posta</dt>
+          <dd><a href="mailto:bugranuri.demir@gmail.com">bugranuri.demir@gmail.com</a></dd>
+        </div>
+        <div class="contact__item">
+          <dt>GitHub</dt>
+          <dd>
+            <a href="https://github.com/nuribugra" target="_blank" rel="noopener">
+              github.com/nuribugra <span aria-hidden="true">↗</span><span class="sr-only"> (yeni sekmede açılır)</span>
+            </a>
+          </dd>
+        </div>
+        <div class="contact__item">
+          <dt>LinkedIn</dt>
+          <dd>
+            <a href="https://www.linkedin.com/in/nuribugrademir" target="_blank" rel="noopener">
+              linkedin.com/in/nuribugrademir <span aria-hidden="true">↗</span><span class="sr-only"> (yeni sekmede açılır)</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Nuri Buğra Demir</p>
+    <a class="site-footer__top" href="#">Başa dön <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
 </html>
