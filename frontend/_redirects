@@ -1,3 +1,2 @@
-# Cloudflare Pages yönlendirmeleri
-# Yazı adresleri (/articles/express-ile-ilk-endpoint) tek yazı sayfasından sunulur; sayfa yenilemede de açılır.
-/articles/*  /articles/article.html  200
+# Yönlendirmeler (Cloudflare)
+# Yazılar açılınca /articles/:slug adresleri burada ya da backend tarafında ele alınacak.

@@ -65,6 +65,18 @@ if (document.body.hasAttribute("data-home")) {
     })
   );
 
+  // Logo: ana sayfadayken sayfayı yeniden yüklemeden başa kaydır
+  document.querySelector("[data-brand]")?.addEventListener("click", (e) => {
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    const target = e.currentTarget.getAttribute("href");
+    if (location.pathname + location.search !== target) history.pushState({ section: "projects" }, "", target);
+    markCurrent("projects");
+    spyPaused = true;
+    scrollToSection("projects", true);
+    setTimeout(() => { spyPaused = false; }, 900);
+  });
+
   // Geri / ileri tuşları
   window.addEventListener("popstate", () => {
     const id = sectionForPath(location.pathname);

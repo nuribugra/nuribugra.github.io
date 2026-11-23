@@ -159,8 +159,15 @@ const server = createServer(async (req, res) => {
 
   const file = await resolveFile(pathname);
   if (!file) {
-    res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
-    return res.end("404 — Sayfa bulunamadı");
+    // Yayındaki gibi: bulunamayan adreslerde frontend/404.html
+    try {
+      const page = await readFile(join(ROOT, "404.html"));
+      res.writeHead(404, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+      return res.end(page);
+    } catch {
+      res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+      return res.end("404 — Sayfa bulunamadı");
+    }
   }
   const body = await readFile(file);
   res.writeHead(200, {

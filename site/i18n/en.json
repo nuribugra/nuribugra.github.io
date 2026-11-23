@@ -13,7 +13,8 @@
     "page_label": "Page",
     "projects": "Projects",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Home"
   },
   "common": {
     "skip_projects": "Skip to projects",

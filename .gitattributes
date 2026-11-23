@@ -1,0 +1,7 @@
+# Satır sonları her işletim sisteminde LF kalsın (Windows dahil)
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.webp binary
+*.jpg binary
+*.woff2 binary

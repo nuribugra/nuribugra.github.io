@@ -5,11 +5,10 @@
   padding: 1rem var(--gutter);
   font-size: .9375rem;
 }
-.topbar a { text-decoration: none; color: var(--text-dim); padding: .4rem 0; }
-.topbar a:hover { color: var(--text); }
+.topbar__back { text-decoration: none; color: var(--text-dim); padding: .4rem 0; }
+.topbar__back:hover { color: var(--text); }
 .topbar__back span { display: inline-block; transition: transform .2s; }
 .topbar__back:hover span { transform: translateX(-3px); }
-.topbar__name { font-family: var(--font-display); font-size: 1.25rem; color: var(--text) !important; }
 .topbar__end { display: flex; align-items: center; gap: 1rem; }
 .topbar .lang-switch { padding: .3rem .55rem; }
 

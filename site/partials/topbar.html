@@ -1,7 +1,7 @@
   <nav class="topbar" aria-label="{{t.nav.page_label}}">
     <a class="topbar__back" href="{{path.home}}?{{t.ui.project_param}}={{page.project}}"><span aria-hidden="true">←</span> {{t.nav.projects}}</a>
     <div class="topbar__end">
-      <a class="topbar__name" href="{{path.home}}">{{t.site.name}}</a>
+      <a class="brand" href="{{path.home}}" aria-label="{{t.site.name}} — {{t.nav.home}}">{{> logo}}</a>
       {{> lang}}
     </div>
   </nav>

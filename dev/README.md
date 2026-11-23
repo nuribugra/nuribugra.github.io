@@ -35,11 +35,13 @@ Windows PowerShell'de ortam değişkeni: `$env:MOCK="empty"; node dev/server.mjs
 - `/api/articles` ve `/api/articles/:slug` uçlarını `docs/backend.md` sözleşmesine göre `sample-articles.mjs` içindeki örnek veriyle yanıtlar: taslak ve ileri tarihli yazılar listede yoktur, detayları 404 verir.
 - Örnek veri döndüğünde `X-Data-Source: sample` başlığı gönderir; sayfa bunu görünce "Örnek veri" şeridini gösterir. Gerçek Express bu başlığı göndermediği için şerit yayında görünmez.
 
-## Yayında: Cloudflare Pages
+## Yayında: Cloudflare Workers (statik site)
+
+Ayarlar repo kökündeki `wrangler.jsonc` dosyasında (proje adı, `frontend/` klasörü, 404 sayfası).
 
 - Build command: `node site/build.mjs`
-- Build output directory: `frontend`
-- `/hakkimda` gibi adresleri Pages kendisi `hakkimda.html` dosyasından sunar; `/articles/*` yönlendirmesi `frontend/_redirects` içinde.
+- Deploy command: `npx wrangler deploy`
+- `/hakkimda` gibi adresleri Cloudflare `hakkimda.html` dosyasından sunar; bulunamayan adreslerde `frontend/404.html` gösterilir.
 
 ## İleride VPS'te (Caddy)
 

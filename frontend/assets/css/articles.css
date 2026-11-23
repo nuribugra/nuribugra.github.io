@@ -5,8 +5,6 @@
   display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
   padding: 1rem var(--gutter) 0;
 }
-.sub-header .site-nav { padding: 0; }
-.sub-header__name { font: 400 1.25rem/1 var(--font-display); text-decoration: none; }
 
 /* ---------- Liste ---------- */
 .articles { padding: clamp(2.5rem, 7vw, 5rem) var(--gutter) 0; }

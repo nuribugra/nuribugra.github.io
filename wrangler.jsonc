@@ -1,0 +1,14 @@
+// Cloudflare Workers — statik site ayarı.
+// Cloudflare her push'ta önce "node site/build.mjs" ile sayfaları üretir, sonra frontend/ klasörünü yayınlar.
+// "name", Cloudflare panelindeki proje adıyla aynı olmalı.
+{
+  "name": "nuribugrademir",
+  "compatibility_date": "2026-11-24",
+  "assets": {
+    "directory": "./frontend",
+    // /hakkimda → hakkimda.html, /projeler/jakovs/ → projeler/jakovs/index.html
+    "html_handling": "auto-trailing-slash",
+    // bulunamayan adreslerde frontend/404.html gösterilir
+    "not_found_handling": "404-page"
+  }
+}

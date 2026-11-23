@@ -37,14 +37,19 @@ const PAGES = [
   // Yazılar şimdilik yalnızca Türkçe (menüde gizli)
   { id: "articles", template: "articles.html", file: { tr: "articles/index.html" } },
   { id: "article",  template: "article.html",  file: { tr: "articles/article.html" } },
+  // Bulunamayan adresler için (iki dilli tek sayfa)
+  { id: "notfound", template: "404.html", file: { tr: "404.html" } },
 ];
 
 const urlFor = (page, lang) => {
-  if (page.id === "article") return null;
+  if (page.id === "article" || page.id === "notfound") return null;
   return PATHS[lang][page.id === "home" ? "home" : page.id] ?? null;
 };
 
 // ---------- Küçük şablon motoru ----------
+// Windows'ta git satır sonlarını CRLF yapabilir; şablonları her makinede aynı okumak için LF'ye çevir
+const readText = async (file) => (await readFile(file, "utf8")).replace(/\r\n/g, "\n");
+
 const escapeHtml = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
@@ -60,7 +65,7 @@ async function render(src, ctx, where) {
   for (let i = 0; i < 5 && /\{\{>\s*[\w-]+\s*\}\}/.test(out); i++) {
     const names = [...out.matchAll(/\{\{>\s*([\w-]+)\s*\}\}/g)].map((m) => m[1]);
     for (const name of new Set(names)) {
-      const partial = await readFile(join(SITE, "partials", `${name}.html`), "utf8");
+      const partial = await readText(join(SITE, "partials", `${name}.html`));
       out = out.replaceAll(new RegExp(`\\{\\{>\\s*${name}\\s*\\}\\}`, "g"), partial.trimEnd());
     }
   }
@@ -76,14 +81,14 @@ async function render(src, ctx, where) {
 
 // ---------- Üretim ----------
 const locales = {
-  tr: JSON.parse(await readFile(join(SITE, "i18n", "tr.json"), "utf8")),
-  en: JSON.parse(await readFile(join(SITE, "i18n", "en.json"), "utf8")),
+  tr: JSON.parse(await readText(join(SITE, "i18n", "tr.json"))),
+  en: JSON.parse(await readText(join(SITE, "i18n", "en.json"))),
 };
 const ALT = { tr: "en", en: "tr" };
 const written = [];
 
 for (const page of PAGES) {
-  const template = await readFile(join(SITE, "pages", page.template), "utf8");
+  const template = await readText(join(SITE, "pages", page.template));
   for (const lang of Object.keys(page.file)) {
     const t = locales[lang];
     const alt = ALT[lang];
@@ -124,7 +129,7 @@ for (const page of PAGES) {
     const banner = `<!-- Bu dosya site/pages/${page.template} ve site/i18n/${lang}.json dosyalarından üretildi. Elle düzenleme; değişiklik için site/ içini düzenleyip "node site/build.mjs" çalıştır. -->\n`;
     const target = join(OUT, page.file[lang]);
     await mkdir(dirname(target), { recursive: true });
-    await writeFile(target, html.replace(/^<!DOCTYPE html>\n/i, `<!DOCTYPE html>\n${banner}`));
+    await writeFile(target, html.replace(/^<!DOCTYPE html>\r?\n/i, `<!DOCTYPE html>\n${banner}`));
     written.push(page.file[lang]);
   }
 }

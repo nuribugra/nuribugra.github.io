@@ -261,19 +261,24 @@ a { color: inherit; }
 /* ---------- Üst menü ---------- */
 html { scroll-behavior: smooth; }
 .site-nav {
-  display: flex; justify-content: flex-end; align-items: center; gap: clamp(1rem, 3vw, 2rem);
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
   padding: 1rem var(--gutter) 0;
   font-size: .9375rem;
 }
-.site-nav a {
+.site-nav__links { display: flex; align-items: center; gap: clamp(.85rem, 3vw, 2rem); }
+@media (max-width: 420px) {
+  .site-nav { font-size: .875rem; }
+  .site-nav__links { gap: .8rem; }
+}
+.site-nav__links a {
   color: var(--text-dim); text-decoration: none;
   padding: .4rem 0;
   border-bottom: 1px solid transparent;
   transition: color .2s, border-color .2s;
 }
-.site-nav a:hover { color: var(--text); border-bottom-color: var(--red); }
-.site-nav a[aria-current="page"],
-.site-nav a[aria-current="location"] { color: var(--text); border-bottom-color: var(--red); }
+.site-nav__links a:hover { color: var(--text); border-bottom-color: var(--red); }
+.site-nav__links a[aria-current="page"],
+.site-nav__links a[aria-current="location"] { color: var(--text); border-bottom-color: var(--red); }
 
 /* Dil seçici: menünün sonunda, diğer bağlantılardan ince bir çizgiyle ayrılır */
 .lang-switch {
@@ -288,6 +293,18 @@ html { scroll-behavior: smooth; }
   transition: border-color .2s, color .2s;
 }
 .lang-switch:hover { color: var(--text); border-color: var(--red) !important; }
+
+/* ---------- İmza (NBD) ----------
+   Kapalıyken D harfi N ve B'yi çevreler; üzerine gelince açılır ve üç harf ayrı okunur.
+   (CSS "d" özelliğini desteklemeyen tarayıcılarda imza kapalı hâliyle durur.) */
+.brand { display: inline-flex; color: var(--text); text-decoration: none; line-height: 0; }
+.nbd-mark { width: 3.4rem; height: auto; overflow: visible; }
+.nbd-mark .nbd-outline { transition: d .19s ease-out, stroke .19s ease-out; }
+.brand:focus-visible .nbd-outline { d: path("M52 3 H58 C67.39 3 75 10.61 75 20 C75 29.39 67.39 37 58 37 H52"); stroke: var(--red); }
+@media (hover: hover) {
+  .brand:hover .nbd-outline { d: path("M52 3 H58 C67.39 3 75 10.61 75 20 C75 29.39 67.39 37 58 37 H52"); stroke: var(--red); }
+}
+@media (max-width: 420px) { .site-nav .nbd-mark { width: 2.9rem; } }
 
 /* ---------- Ortak bölüm başlıkları ---------- */
 .kicker { margin: 0 0 .5rem; color: var(--text-dim); font-size: .8125rem; letter-spacing: .02em; }
@@ -421,6 +438,8 @@ html { scroll-behavior: smooth; }
   color: var(--text-dim); font-size: .875rem;
 }
 .site-footer p { margin: 0; }
+.site-footer__sign { display: flex; align-items: center; gap: .9rem; }
+.site-footer__sign .nbd-mark { width: 2.4rem; color: var(--text-dim); }
 .site-footer__top { color: var(--text-dim); text-decoration: none; background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
 .site-footer__top:hover { color: var(--text); }
 
@@ -438,4 +457,12 @@ html { scroll-behavior: smooth; }
   .caption.is-entering { animation: none; }
   @view-transition { navigation: none; }
   html { scroll-behavior: auto; }
+  .nbd-mark .nbd-outline { transition: none; }
 }
+
+/* ---------- 404 ---------- */
+.notfound { min-height: 100svh; display: grid; place-items: center; }
+.notfound__main { padding: 3rem var(--gutter); width: min(100%, 44rem); }
+.notfound__title { margin: 0; font: 400 clamp(3rem, 9vw, 6rem)/.95 var(--font-display); }
+.notfound__text { margin: 1rem 0 0; color: var(--text-dim); font-size: 1.125rem; }
+.notfound__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
