@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nuribugrademir.com/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/"/>
+  </url>
+  <url>
+    <loc>https://nuribugrademir.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/"/>
+  </url>
+  <url>
+    <loc>https://nuribugrademir.com/projeler/haus-pera/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/projeler/haus-pera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/projects/haus-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/projeler/haus-pera/"/>
+  </url>
+  <url>
+    <loc>https://nuribugrademir.com/en/projects/haus-pera/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/projeler/haus-pera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/projects/haus-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/projeler/haus-pera/"/>
+  </url>
+  <url>
+    <loc>https://nuribugrademir.com/projeler/jakovs/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/projeler/jakovs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/projects/jakovs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/projeler/jakovs/"/>
+  </url>
+  <url>
+    <loc>https://nuribugrademir.com/en/projects/jakovs/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/projeler/jakovs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/projects/jakovs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/projeler/jakovs/"/>
+  </url>
+</urlset>

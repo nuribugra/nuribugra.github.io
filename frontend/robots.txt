@@ -1,0 +1,5 @@
+User-agent: *
+# Yazılar hazır olunca bu satırı kaldır
+Disallow: /articles/
+
+Sitemap: https://nuribugrademir.com/sitemap.xml

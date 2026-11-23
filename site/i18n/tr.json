@@ -1,7 +1,13 @@
 {
-  "lang": { "short": "TR", "name": "Türkçe" },
-  "site": { "name": "Nuri Buğra Demir" },
-
+  "lang": {
+    "short": "TR",
+    "name": "Türkçe",
+    "og_locale": "tr_TR"
+  },
+  "site": {
+    "name": "Nuri Buğra Demir",
+    "og_alt": "Nuri Buğra Demir — TypeScript, Express, PostgreSQL — nuribugrademir.com"
+  },
   "nav": {
     "label": "Ana menü",
     "page_label": "Sayfa",
@@ -9,7 +15,6 @@
     "about": "Hakkımda",
     "contact": "İletişim"
   },
-
   "common": {
     "skip_projects": "Projelere geç",
     "skip_content": "İçeriğe geç",
@@ -20,14 +25,12 @@
     "all_projects": "Tüm projeler",
     "other_project": "Diğer proje"
   },
-
   "home": {
     "title": "Nuri Buğra Demir",
     "description": "Nuri Buğra Demir — web geliştirme portföyü.",
     "name_html": "Nuri Buğra<br>Demir",
     "lede": "Web arayüzleri ve backend geliştiriyorum. Aşağıda müşteriler için yaptığım işler var."
   },
-
   "showcase": {
     "label": "Projeler",
     "stage_label": "Proje vitrini. Sol ve sağ ok tuşlarıyla proje değiştirin.",
@@ -36,7 +39,6 @@
     "next": "Sonraki proje",
     "noscript": "Proje vitrini için JavaScript gerekiyor."
   },
-
   "about": {
     "portrait_alt": "Nuri Buğra Demir, koyu ve kırmızı tonlu bir fonun önünde gözlüklü portre",
     "kicker": "Hakkımda",
@@ -44,7 +46,6 @@
     "p1": "Dokuz Eylül Üniversitesi'nde Bilgisayar Bilimleri okuyorum. Son dönemde ağırlığı backend tarafına verdim: TypeScript, Express ve PostgreSQL ile bir isteğin sunucuda nasıl karşılandığını, verinin nasıl saklanıp sunulduğunu öğreniyor ve uyguluyorum. Bu sitenin arka tarafını da aynı süreçte kendim kuruyorum.",
     "p2": "Bir yandan da yerel işletmeler için web projeleri yapıyorum. Haus Pera'nın QR menüsü ve Jakovs'un web sitesi bunlardan ikisi; ikisi de şu an işletmelerde kullanılıyor."
   },
-
   "contact": {
     "title": "İletişim",
     "sub_1": "Dokuz Eylül Üniversitesi, Bilgisayar Bilimleri",
@@ -53,7 +54,6 @@
     "copy": "Adresi kopyala",
     "email": "E-posta"
   },
-
   "haus": {
     "title": "Haus Pera Coffee — QR Menü · Nuri Buğra Demir",
     "description": "Haus Pera Coffee için QR kodla açılan mobil menü ve yönetim paneli.",
@@ -104,7 +104,6 @@
       "products_ph": "Menüde ürün listesi"
     }
   },
-
   "jakovs": {
     "title": "Jakovs Coffee — Web sitesi yenilemesi · Nuri Buğra Demir",
     "description": "Jakovs Coffee'nin hazır web sitesinin mekânın kimliğine göre yeniden düzenlenmesi.",
@@ -160,14 +159,12 @@
       "m_gallery_ph": "Jakovs mobil galeri"
     }
   },
-
   "articles": {
     "title": "Yazılar",
     "description": "Nuri Buğra Demir'in yazıları.",
     "list_label": "Yazı listesi",
     "noscript": "Yazıları görmek için JavaScript gerekiyor."
   },
-
   "ui": {
     "project_param": "proje",
     "slide": "slayt",

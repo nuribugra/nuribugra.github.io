@@ -111,6 +111,11 @@ for (const page of PAGES) {
         alternates: Boolean(trUrl && enUrl),
         alt: altUrl ? { href: altUrl, lang: alt, label: locales[alt].lang.short, name: locales[alt].lang.name } : null,
       },
+      // Başlık ve açıklama (paylaşım önizlemesi için)
+      meta: (() => {
+        const key = { home: "home", about: "home", contact: "home", haus: "haus", jakovs: "jakovs" }[page.id] ?? "articles";
+        return { title: key === "articles" ? `${t.articles.title} · ${t.site.name}` : t[key].title, description: t[key].description };
+      })(),
       // Tarayıcıdaki JavaScript'in kullandığı metinler
       ui_json: JSON.stringify(t.ui).replace(/</g, "\\u003c"),
     };
@@ -123,6 +128,22 @@ for (const page of PAGES) {
     written.push(page.file[lang]);
   }
 }
+
+// ---------- sitemap.xml ve robots.txt ----------
+// Yalnızca asıl sayfalar: bölüm kopyaları (/hakkimda…) ana sayfayı gösterdiği, Yazılar da henüz gizli olduğu için dışarıda.
+const origin = config.origin || "";
+const listed = ["home", "haus", "jakovs"];
+const urls = listed.flatMap((id) => {
+  const tr = PATHS.tr[id === "home" ? "home" : id];
+  const en = PATHS.en[id === "home" ? "home" : id];
+  const alts = `    <xhtml:link rel="alternate" hreflang="tr" href="${origin}${tr}"/>\n    <xhtml:link rel="alternate" hreflang="en" href="${origin}${en}"/>\n    <xhtml:link rel="alternate" hreflang="x-default" href="${origin}${tr}"/>`;
+  return [tr, en].map((loc) => `  <url>\n    <loc>${origin}${loc}</loc>\n${alts}\n  </url>`);
+});
+await writeFile(join(OUT, "sitemap.xml"),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join("\n")}\n</urlset>\n`);
+await writeFile(join(OUT, "robots.txt"),
+  `User-agent: *\n# Yazılar hazır olunca bu satırı kaldır\nDisallow: /articles/\n\nSitemap: ${origin}/sitemap.xml\n`);
+written.push("sitemap.xml", "robots.txt");
 
 console.log(`  ${written.length} sayfa üretildi → frontend/`);
 for (const f of written) console.log(`   · ${f}`);
