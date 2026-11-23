@@ -1,0 +1,184 @@
+{
+  "lang": { "short": "EN", "name": "English" },
+  "site": { "name": "Nuri Buğra Demir" },
+
+  "nav": {
+    "label": "Main menu",
+    "page_label": "Page",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+
+  "common": {
+    "skip_projects": "Skip to projects",
+    "skip_content": "Skip to content",
+    "back_top": "Back to top",
+    "new_tab": "(opens in a new tab)",
+    "copyright": "© 2026 Nuri Buğra Demir",
+    "projects_nav": "Project navigation",
+    "all_projects": "All projects",
+    "other_project": "Next project"
+  },
+
+  "home": {
+    "title": "Nuri Buğra Demir",
+    "description": "Nuri Buğra Demir — web development portfolio.",
+    "name_html": "Nuri Buğra<br>Demir",
+    "lede": "I build web interfaces and backends. Below is work I've done for clients."
+  },
+
+  "showcase": {
+    "label": "Projects",
+    "stage_label": "Project showcase. Use the left and right arrow keys to switch projects.",
+    "inspect": "View project",
+    "prev": "Previous project",
+    "next": "Next project",
+    "noscript": "The project showcase requires JavaScript."
+  },
+
+  "about": {
+    "portrait_alt": "Portrait of Nuri Buğra Demir wearing glasses, against a dark background with a red tint",
+    "kicker": "About",
+    "title": "Hi, I'm Buğra.",
+    "p1": "I study Computer Science at Dokuz Eylül University. Lately my focus has been on the backend: with TypeScript, Express and PostgreSQL, I'm learning — and putting into practice — how a server handles a request and how data is stored and served. I'm building the backend of this site myself as part of that process.",
+    "p2": "Alongside my studies, I build web projects for local businesses. Haus Pera's QR menu and Jakovs' website are two of them, and both are in use at the businesses today."
+  },
+
+  "contact": {
+    "title": "Contact",
+    "sub_1": "Dokuz Eylül University, Computer Science",
+    "sub_2": "TypeScript · Express · PostgreSQL",
+    "send": "Send an email",
+    "copy": "Copy address",
+    "email": "Email"
+  },
+
+  "haus": {
+    "title": "Haus Pera Coffee — QR Menu · Nuri Buğra Demir",
+    "description": "A QR-code mobile menu and management panel for Haus Pera Coffee.",
+    "kicker": "Client work",
+    "subtitle": "QR Menu",
+    "lede": "The digital menu in use at Haus Pera Coffee. Guests scan the code on their table to open the menu on their phone, while the business updates its products and prices from its own management panel.",
+    "facts": {
+      "scope_label": "Scope",
+      "scope": "Mobile menu and management panel",
+      "stack_label": "Stack"
+    },
+    "guest": {
+      "kicker": "01 — Guest experience",
+      "title": "From the table to the menu",
+      "s1_title": "Scan the code",
+      "s1_text": "Every table has a QR card that leads to the menu; scanning it with the phone camera is all it takes.",
+      "s2_title": "The menu opens on the phone",
+      "s2_text": "It opens in the browser, with no app to install. Categories and search are on a single screen."
+    },
+    "owner": {
+      "kicker": "02 — Business management",
+      "title": "Prices in the owner's hands",
+      "s1_title": "Prices are updated in the panel",
+      "s1_text": "The business signs in to its password-protected management panel and changes the price of a product. Here, the hot Latte price is being edited.",
+      "s2_title": "The menu updates right away",
+      "s2_text": "The change appears on the menu as soon as it's saved; the next guest to scan the code sees the Latte at its new price. No developer or reprinting needed."
+    },
+    "approach": {
+      "kicker": "03 — Approach",
+      "title": "A simple foundation",
+      "d1_title": "One application",
+      "d1_text": "The menu guests see and the management panel the business uses run together in a single Next.js application, so maintenance and updates happen in one place.",
+      "d2_title": "The menu as one record",
+      "d2_text": "The entire menu is stored as a single record in the database. Since the menu is always displayed and saved as a whole, this keeps things simple and easy to manage.",
+      "d3_title": "A menu kept ready",
+      "d3_text": "Instead of being read from the database on every visit, the menu is kept ready on the server. When the business saves a change, that copy is refreshed, so guests always see the current menu.",
+      "next": "Next steps: dynamic QR codes and a version that multiple businesses can use."
+    },
+    "img": {
+      "hero": "The opening screen of the Haus Pera Coffee QR menu on a phone: search box and category cards",
+      "hero_ph": "Haus Pera mobile menu",
+      "card": "Haus Pera table card: a QR code inside an illustration of an arched brick window, with the line “Scan the QR code to view our menu” in Turkish",
+      "card_ph": "Haus Pera QR table card",
+      "menu": "The menu opened on a phone: category cards and search box",
+      "admin": "The coffee list in the management panel: the hot Latte price field being edited to 205.00, with Save and Cancel buttons",
+      "admin_ph": "Management panel, editing a price",
+      "products": "The coffee list on the guest menu: Latte shown at 205.00 TL hot and 215.00 TL iced",
+      "products_ph": "Product list on the menu"
+    }
+  },
+
+  "jakovs": {
+    "title": "Jakovs Coffee — Website redesign · Nuri Buğra Demir",
+    "description": "Reworking Jakovs Coffee's template website around the venue's own identity.",
+    "kicker": "Redesign",
+    "subtitle": "Website redesign",
+    "lede": "The business had bought its website as a ready-made service through Turhost. I reworked that template site around the venue's warm atmosphere and its stone reliefs, rebuilding the visual hierarchy and the gallery layout from the ground up.",
+    "facts": {
+      "start_label": "Starting point",
+      "start": "Turhost template website",
+      "focus_label": "Focus",
+      "focus": "Colour, visual language, page layout, gallery"
+    },
+    "live": "Visit the live site",
+    "live_sr": "(jakovs.com.tr, opens in a new tab)",
+    "compare": {
+      "kicker": "01 — Before and after",
+      "title": "From a stock template to the venue's own identity",
+      "before": "Before",
+      "after": "After",
+      "slider": "Before and after comparison",
+      "hint": "Drag the line or use the arrow keys."
+    },
+    "changes": {
+      "c1_title": "Colour",
+      "c1_text": "The template's bright lime green was replaced with deep green and warm cream tones.",
+      "c2_title": "Imagery",
+      "c2_text": "A generic coffee photo gave way to the venue's own product and atmosphere photography.",
+      "c3_title": "Identity",
+      "c3_text": "The venue's emblem replaced a text-only logo, and the headline and introduction in the hero area were separated."
+    },
+    "full": {
+      "kicker": "02 — The new home page",
+      "title": "One flow, top to bottom",
+      "lede": "After the hero area come the service approach, photos from the venue and the contact details. The gallery brings different corners of the venue and its products together in one consistent layout, and the page closes with a photo taken in front of the stone relief wall."
+    },
+    "mobile": {
+      "kicker": "03 — Mobile",
+      "title": "A single column on the phone",
+      "s1_title": "Home page",
+      "s1_text": "The menu links collapse into a single button, and the hero area and introduction stack into one column.",
+      "s2_title": "Photo gallery",
+      "s2_text": "On the phone the gallery becomes a two-column grid, with the shots in front of the stone relief and the venue photos following the same layout."
+    },
+    "img": {
+      "hero": "The redesigned Jakovs home page: dark green header, iced coffee photo and the word ΙΑΚΩΒΟΣ",
+      "hero_ph": "Jakovs home page",
+      "before": "The previous site: bright lime green header, a generic coffee cup photo and a centred JAKOVS title",
+      "after": "The redesigned site: dark green header, the venue's emblem and its own iced coffee photo",
+      "full": "The full redesigned Jakovs home page: hero area, service approach, photo gallery, a photo in front of the stone relief and contact details",
+      "m_home": "The Jakovs home page on a phone: emblem, menu button, ΙΑΚΩΒΟΣ title and introduction",
+      "m_home_ph": "Jakovs mobile home page",
+      "m_gallery": "The Jakovs photo gallery on a phone: introduction text and a two-column photo grid",
+      "m_gallery_ph": "Jakovs mobile gallery"
+    }
+  },
+
+  "articles": {
+    "title": "Articles",
+    "description": "Articles by Nuri Buğra Demir.",
+    "list_label": "Article list",
+    "noscript": "JavaScript is required to view the articles."
+  },
+
+  "ui": {
+    "project_param": "project",
+    "slide": "slide",
+    "inspect_aria": "View the {title} project",
+    "placeholder": "Placeholder",
+    "placeholder_text": "{label} — real screenshot pending",
+    "placeholder_aria": "{label} image not added yet",
+    "copied": "Address copied to clipboard.",
+    "copy_failed": "Couldn't copy: {value}",
+    "compare_value": "{n} percent after",
+    "fullpage_open": "Show the full page",
+    "fullpage_close": "Collapse the page"
+  }
+}

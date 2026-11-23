@@ -1,5 +1,6 @@
 // /articles/:slug — tek yazı. Markdown, ham HTML kapalı olarak çizilir.
 import { fetchArticle, formatDate, markSample, NotFoundError } from "./api.js";
+import { initToTop } from "./ui.js";
 
 const root = document.querySelector("[data-article]");
 const slug = decodeURIComponent(location.pathname.replace(/^\/articles\/|\/$/g, ""));
@@ -95,3 +96,4 @@ async function load() {
 }
 
 load();
+initToTop();

@@ -1,0 +1,184 @@
+{
+  "lang": { "short": "TR", "name": "Türkçe" },
+  "site": { "name": "Nuri Buğra Demir" },
+
+  "nav": {
+    "label": "Ana menü",
+    "page_label": "Sayfa",
+    "projects": "Projeler",
+    "about": "Hakkımda",
+    "contact": "İletişim"
+  },
+
+  "common": {
+    "skip_projects": "Projelere geç",
+    "skip_content": "İçeriğe geç",
+    "back_top": "Başa dön",
+    "new_tab": "(yeni sekmede açılır)",
+    "copyright": "© 2026 Nuri Buğra Demir",
+    "projects_nav": "Projeler arası",
+    "all_projects": "Tüm projeler",
+    "other_project": "Diğer proje"
+  },
+
+  "home": {
+    "title": "Nuri Buğra Demir",
+    "description": "Nuri Buğra Demir — web geliştirme portföyü.",
+    "name_html": "Nuri Buğra<br>Demir",
+    "lede": "Web arayüzleri ve backend geliştiriyorum. Aşağıda müşteriler için yaptığım işler var."
+  },
+
+  "showcase": {
+    "label": "Projeler",
+    "stage_label": "Proje vitrini. Sol ve sağ ok tuşlarıyla proje değiştirin.",
+    "inspect": "Projeyi incele",
+    "prev": "Önceki proje",
+    "next": "Sonraki proje",
+    "noscript": "Proje vitrini için JavaScript gerekiyor."
+  },
+
+  "about": {
+    "portrait_alt": "Nuri Buğra Demir, koyu ve kırmızı tonlu bir fonun önünde gözlüklü portre",
+    "kicker": "Hakkımda",
+    "title": "Merhaba, ben Buğra.",
+    "p1": "Dokuz Eylül Üniversitesi'nde Bilgisayar Bilimleri okuyorum. Son dönemde ağırlığı backend tarafına verdim: TypeScript, Express ve PostgreSQL ile bir isteğin sunucuda nasıl karşılandığını, verinin nasıl saklanıp sunulduğunu öğreniyor ve uyguluyorum. Bu sitenin arka tarafını da aynı süreçte kendim kuruyorum.",
+    "p2": "Bir yandan da yerel işletmeler için web projeleri yapıyorum. Haus Pera'nın QR menüsü ve Jakovs'un web sitesi bunlardan ikisi; ikisi de şu an işletmelerde kullanılıyor."
+  },
+
+  "contact": {
+    "title": "İletişim",
+    "sub_1": "Dokuz Eylül Üniversitesi, Bilgisayar Bilimleri",
+    "sub_2": "TypeScript · Express · PostgreSQL",
+    "send": "E-posta gönder",
+    "copy": "Adresi kopyala",
+    "email": "E-posta"
+  },
+
+  "haus": {
+    "title": "Haus Pera Coffee — QR Menü · Nuri Buğra Demir",
+    "description": "Haus Pera Coffee için QR kodla açılan mobil menü ve yönetim paneli.",
+    "kicker": "Müşteri işi",
+    "subtitle": "QR Menü",
+    "lede": "Haus Pera Coffee'de kullanılan dijital menü. Misafirler masadaki kodu okutarak menüye telefonlarından ulaşıyor; işletme ise ürün ve fiyatlarını kendi yönetim panelinden güncelliyor.",
+    "facts": {
+      "scope_label": "Kapsam",
+      "scope": "Mobil menü ve yönetim paneli",
+      "stack_label": "Altyapı"
+    },
+    "guest": {
+      "kicker": "01 — Misafir deneyimi",
+      "title": "Masadan menüye",
+      "s1_title": "Kodu okutun",
+      "s1_text": "Her masada menüye yönlendiren bir QR kart bulunuyor; telefon kamerasıyla okutmak yeterli.",
+      "s2_title": "Menü telefonda açılır",
+      "s2_text": "Herhangi bir uygulama gerektirmeden tarayıcıda açılıyor. Kategoriler ve arama tek ekranda."
+    },
+    "owner": {
+      "kicker": "02 — İşletme yönetimi",
+      "title": "Fiyatlar işletmenin elinde",
+      "s1_title": "Fiyat panelden güncellenir",
+      "s1_text": "İşletme, şifreyle korunan yönetim paneline giriş yapıp ilgili ürünün fiyatını değiştiriyor. Örnekte Latte'nin sıcak fiyatı düzenleniyor.",
+      "s2_title": "Menü aynı anda güncellenir",
+      "s2_text": "Değişiklik kaydedildiği anda menüye yansıyor; kodu okutan bir sonraki misafir Latte'yi güncel fiyatıyla görüyor. Geliştiriciye ya da yeniden baskıya gerek kalmıyor."
+    },
+    "approach": {
+      "kicker": "03 — Yaklaşım",
+      "title": "Sade bir altyapı",
+      "d1_title": "Tek uygulama",
+      "d1_text": "Misafirlerin gördüğü menü ve işletmenin yönetim paneli, Next.js ile geliştirilmiş tek bir uygulamada bir arada çalışıyor. Bakım ve güncellemeler tek bir yerden yapılıyor.",
+      "d2_title": "Tek parça menü",
+      "d2_text": "Menünün tamamı veritabanında tek bir kayıt olarak saklanıyor. Menü her zaman bir bütün olarak görüntülenip kaydedildiği için bu yapı sade ve yönetimi kolay bir çözüm sunuyor.",
+      "d3_title": "Hazır tutulan menü",
+      "d3_text": "Menü, her ziyarette veritabanından yeniden okunmak yerine sunucuda hazır tutuluyor. İşletme bir değişikliği kaydettiğinde bu kopya yenileniyor; böylece misafirler her zaman güncel menüyü görüyor.",
+      "next": "Sıradaki adımlar: dinamik QR kod ve birden fazla işletmenin kullanabileceği bir sürüm."
+    },
+    "img": {
+      "hero": "Haus Pera Coffee QR menüsünün telefondaki açılış ekranı: arama kutusu ve kategori kartları",
+      "hero_ph": "Haus Pera mobil menü",
+      "card": "Haus Pera masa kartı: tuğla kemerli pencere çizimi içinde QR kod ve “Menümüzü görüntülemek için QR kodu okutun” yazısı",
+      "card_ph": "Haus Pera QR masa kartı",
+      "menu": "Telefonda açılan menü: kategori kartları ve arama kutusu",
+      "admin": "Yönetim panelinde Kahveler listesi: Latte'nin sıcak fiyat alanı 205,00 olarak düzenleniyor, yanında Kaydet ve İptal düğmeleri",
+      "admin_ph": "Yönetim paneli, fiyat düzenleme",
+      "products": "Müşteri menüsünde Kahveler listesi: Latte sıcak 205,00 TL, soğuk 215,00 TL olarak görünüyor",
+      "products_ph": "Menüde ürün listesi"
+    }
+  },
+
+  "jakovs": {
+    "title": "Jakovs Coffee — Web sitesi yenilemesi · Nuri Buğra Demir",
+    "description": "Jakovs Coffee'nin hazır web sitesinin mekânın kimliğine göre yeniden düzenlenmesi.",
+    "kicker": "Yeniden tasarım",
+    "subtitle": "Web sitesi yenilemesi",
+    "lede": "İşletme, web sitesini Turhost üzerinden hazır bir hizmet olarak almıştı. Bu hazır siteyi, mekânın sıcak atmosferinden ve taş rölyeflerinden yola çıkarak yeniden düzenledim; görsel hiyerarşiyi ve galeri düzenini baştan kurdum.",
+    "facts": {
+      "start_label": "Başlangıç",
+      "start": "Turhost hazır web sitesi",
+      "focus_label": "Odak",
+      "focus": "Renk, görsel dil, sayfa düzeni, galeri"
+    },
+    "live": "Canlı siteyi görüntüle",
+    "live_sr": "(jakovs.com.tr, yeni sekmede açılır)",
+    "compare": {
+      "kicker": "01 — Önce ve sonra",
+      "title": "Hazır şablondan mekânın kendi kimliğine",
+      "before": "Önce",
+      "after": "Sonra",
+      "slider": "Önce ve sonra karşılaştırması",
+      "hint": "Çizgiyi sürükleyin ya da ok tuşlarını kullanın."
+    },
+    "changes": {
+      "c1_title": "Renk",
+      "c1_text": "Hazır şablonun canlı fıstık yeşili, koyu yeşil ve sıcak krem tonlarıyla değiştirildi.",
+      "c2_title": "Görseller",
+      "c2_text": "Genel bir kahve fotoğrafının yerine mekânın kendi ürün ve atmosfer fotoğrafları kullanıldı.",
+      "c3_title": "Kimlik",
+      "c3_text": "Yazı ile oluşturulmuş logo yerine mekânın amblemi öne çıkarıldı; karşılama alanındaki başlık ve tanıtım metni birbirinden ayrıldı."
+    },
+    "full": {
+      "kicker": "02 — Yeni ana sayfa",
+      "title": "Baştan sona bir akış",
+      "lede": "Karşılama alanından sonra hizmet anlayışı, mekândan kareler ve iletişim bilgileri sırasıyla geliyor. Galeri, mekânın farklı köşelerini ve ürünlerini aynı düzende bir araya getiriyor; sayfa, taş rölyefli duvarın önünde çekilmiş bir fotoğrafla kapanıyor."
+    },
+    "mobile": {
+      "kicker": "03 — Mobil görünüm",
+      "title": "Telefonda tek sütun",
+      "s1_title": "Ana sayfa",
+      "s1_text": "Menü bağlantıları tek bir düğmede toplanıyor; karşılama alanı ve tanıtım metni ekrana tek sütun halinde yerleşiyor.",
+      "s2_title": "Resim galerisi",
+      "s2_text": "Galeri telefonda iki sütunlu bir ızgaraya dönüşüyor; taş rölyef önündeki kareler ve mekân fotoğrafları aynı düzende sıralanıyor."
+    },
+    "img": {
+      "hero": "Yenilenen Jakovs ana sayfası: koyu yeşil başlık, buzlu kahve fotoğrafı ve ΙΑΚΩΒΟΣ yazısı",
+      "hero_ph": "Jakovs ana sayfa",
+      "before": "Önceki site: açık fıstık yeşili başlık, genel bir kahve fincanı fotoğrafı ve ortalanmış JAKOVS yazısı",
+      "after": "Yenilenen site: koyu yeşil başlık, mekânın amblemi ve kendi buzlu kahve fotoğrafı",
+      "full": "Yenilenen Jakovs ana sayfasının tamamı: karşılama alanı, hizmet anlayışı, fotoğraf galerisi, taş rölyef önünde çekilmiş fotoğraf ve iletişim bilgileri",
+      "m_home": "Jakovs ana sayfasının telefondaki görünümü: amblem, menü düğmesi, ΙΑΚΩΒΟΣ başlığı ve tanıtım metni",
+      "m_home_ph": "Jakovs mobil ana sayfa",
+      "m_gallery": "Jakovs resim galerisinin telefondaki görünümü: tanıtım yazısı ve iki sütunlu fotoğraf ızgarası",
+      "m_gallery_ph": "Jakovs mobil galeri"
+    }
+  },
+
+  "articles": {
+    "title": "Yazılar",
+    "description": "Nuri Buğra Demir'in yazıları.",
+    "list_label": "Yazı listesi",
+    "noscript": "Yazıları görmek için JavaScript gerekiyor."
+  },
+
+  "ui": {
+    "project_param": "proje",
+    "slide": "slayt",
+    "inspect_aria": "{title} projesini incele",
+    "placeholder": "Yer tutucu",
+    "placeholder_text": "{label} — gerçek ekran görüntüsü bekleniyor",
+    "placeholder_aria": "{label} görseli henüz eklenmedi",
+    "copied": "Adres panoya kopyalandı.",
+    "copy_failed": "Kopyalanamadı: {value}",
+    "compare_value": "Yüzde {n} sonra",
+    "fullpage_open": "Sayfanın tamamını göster",
+    "fullpage_close": "Sayfayı kısalt"
+  }
+}

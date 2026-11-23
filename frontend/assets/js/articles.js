@@ -1,5 +1,6 @@
 // /articles — yazı listesi: yükleniyor, boş, hata ve dolu durumları
 import { fetchArticles, formatDate, markSample } from "./api.js";
+import { initToTop } from "./ui.js";
 
 const list = document.querySelector("[data-articles]");
 const status = document.querySelector("[data-articles-status]");
@@ -76,3 +77,4 @@ async function load() {
 }
 
 load();
+initToTop();

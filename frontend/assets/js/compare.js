@@ -1,3 +1,5 @@
+import { ui } from "./ui.js";
+
 // Önce / sonra karşılaştırması: çizgi sürüklenir, dokunulan yere atlar, ok tuşlarıyla kayar.
 // Dikey kaydırma tarayıcıda kalır; yalnızca yatay hareket kaydırıcıyı yönetir.
 
@@ -13,7 +15,7 @@ export function initCompare(root) {
     stage.style.setProperty("--pos", `${pos}%`);
     const rounded = Math.round(pos);
     handle.setAttribute("aria-valuenow", String(rounded));
-    handle.setAttribute("aria-valuetext", `Yüzde ${100 - rounded} sonra`);
+    handle.setAttribute("aria-valuetext", ui("compare_value", { n: 100 - rounded }));
   }
 
   const fromEvent = (e) => {
@@ -70,7 +72,7 @@ export function initFullpage(root) {
   toggle.addEventListener("click", () => {
     const open = frame.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.textContent = open ? "Sayfayı kısalt" : "Sayfanın tamamını göster";
+    toggle.textContent = open ? ui("fullpage_close") : ui("fullpage_open");
     if (!open) frame.scrollIntoView({ block: "nearest" });
   });
 }

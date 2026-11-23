@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Bu dosya site/pages/home.html ve site/i18n/en.json dosyalarından üretildi. Elle düzenleme; değişiklik için site/ içini düzenleyip "node site/build.mjs" çalıştır. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0b0a">
+  <link rel="canonical" href="https://nuribugrademir.com/en/">
+
+  <link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/">
+  <link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=15">
+  <script type="application/json" id="ui-strings">{"project_param":"project","slide":"slide","inspect_aria":"View the {title} project","placeholder":"Placeholder","placeholder_text":"{label} — real screenshot pending","placeholder_aria":"{label} image not added yet","copied":"Address copied to clipboard.","copy_failed":"Couldn't copy: {value}","compare_value":"{n} percent after","fullpage_open":"Show the full page","fullpage_close":"Collapse the page"}</script>
+  <title>Nuri Buğra Demir</title>
+  <meta name="description" content="Nuri Buğra Demir — web development portfolio.">
+  <script type="module" src="/assets/js/main.js?v=15"></script>
+</head>
+<body data-home data-section="">
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <nav class="site-nav" aria-label="Main menu">
+    <a href="/en/" data-section="projects">Projects</a>
+    <!-- Yazılar backend hazır olunca açılacak -->
+    <a href="/en/about" data-section="about">About</a>
+    <a href="/en/contact" data-section="contact">Contact</a>
+    <a class="lang-switch" href="/" hreflang="tr" lang="tr" aria-label="Türkçe">TR</a>
+  </nav>
+
+  <header class="intro">
+    <h1 class="intro__name">Nuri Buğra<br>Demir</h1>
+    <p class="intro__lede">I build web interfaces and backends. Below is work I&#39;ve done for clients.</p>
+  </header>
+
+  <main>
+    <section class="showcase" id="projects" data-route="/en/" data-alt-route="/" aria-roledescription="carousel" aria-label="Projects">
+      <div class="showcase__stage" data-stage tabindex="0" aria-label="Project showcase. Use the left and right arrow keys to switch projects.">
+        <div class="showcase__wheel" data-wheel></div>
+        <div class="showcase__selector" aria-hidden="true"></div>
+      </div>
+
+      <div class="showcase__bar">
+        <div class="showcase__caption" data-caption aria-live="polite"></div>
+        <div class="showcase__controls">
+          <a class="showcase__link" data-link href="/en/projects/haus-pera/">View project <span aria-hidden="true">→</span></a>
+          <span class="showcase__count" data-count aria-hidden="true"></span>
+          <button class="arrow" type="button" data-prev aria-label="Previous project">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="arrow" type="button" data-next aria-label="Next project">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <noscript><p class="showcase__noscript">The project showcase requires JavaScript.</p></noscript>
+    </section>
+
+    <section class="about" id="about" data-route="/en/about" data-alt-route="/hakkimda" aria-labelledby="about-title">
+      <figure class="about__portrait">
+        <img src="/assets/img/portre.webp" width="900" height="1125" loading="lazy" alt="Portrait of Nuri Buğra Demir wearing glasses, against a dark background with a red tint">
+      </figure>
+      <div class="about__text">
+        <p class="kicker">About</p>
+        <h2 id="about-title" class="section-title">Hi, I&#39;m Buğra.</h2>
+        <p>I study Computer Science at Dokuz Eylül University. Lately my focus has been on the backend: with TypeScript, Express and PostgreSQL, I&#39;m learning — and putting into practice — how a server handles a request and how data is stored and served. I&#39;m building the backend of this site myself as part of that process.</p>
+        <p>Alongside my studies, I build web projects for local businesses. Haus Pera&#39;s QR menu and Jakovs&#39; website are two of them, and both are in use at the businesses today.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" data-route="/en/contact" data-alt-route="/iletisim" aria-labelledby="contact-title">
+      <div class="contact__head">
+        <div>
+          <h2 id="contact-title" class="contact__title">Contact</h2>
+          <p class="contact__sub">Dokuz Eylül University, Computer Science<br>TypeScript · Express · PostgreSQL</p>
+        </div>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:bugranuri.demir@gmail.com">
+            Send an email <span aria-hidden="true">→</span>
+          </a>
+          <button class="btn btn--ghost" type="button" data-copy="bugranuri.demir@gmail.com">
+            Copy address
+          </button>
+          <span class="contact__status" data-copy-status role="status" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <dl class="contact__grid">
+        <div class="contact__item">
+          <dt>Email</dt>
+          <dd><a href="mailto:bugranuri.demir@gmail.com">bugranuri.demir@gmail.com</a></dd>
+        </div>
+        <div class="contact__item">
+          <dt>GitHub</dt>
+          <dd>
+            <a href="https://github.com/nuribugra" target="_blank" rel="noopener">
+              github.com/nuribugra <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </dd>
+        </div>
+        <div class="contact__item">
+          <dt>LinkedIn</dt>
+          <dd>
+            <a href="https://www.linkedin.com/in/nuribugrademir" target="_blank" rel="noopener">
+              linkedin.com/in/nuribugrademir <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Nuri Buğra Demir</p>
+    <button class="site-footer__top" type="button" data-to-top>Back to top <span aria-hidden="true">↑</span></button>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+  <title>{{t.articles.title}} · {{t.site.name}}</title>
+  <meta name="description" content="{{t.articles.description}}">
+  <link rel="stylesheet" href="/assets/css/articles.css?v={{v}}">
+  <!-- Markdown çizici (MIT lisanslı, assets/vendor/markdown-it/LICENSE) -->
+  <script src="/assets/vendor/markdown-it/markdown-it.min.js" defer></script>
+  <script type="module" src="/assets/js/article.js?v={{v}}"></script>
+</head>
+<body>
+  <a class="skip" href="#content">{{t.common.skip_content}}</a>
+
+  <header class="sub-header">
+    <a class="sub-header__name" href="{{path.home}}">{{t.site.name}}</a>
+{{> nav}}
+  </header>
+
+  <main id="content">
+    <article class="post" data-article aria-live="polite"></article>
+  </main>
+
+{{> footer}}
+</body>
+</html>

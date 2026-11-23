@@ -1,25 +1,34 @@
 <!DOCTYPE html>
+<!-- Bu dosya site/pages/home.html ve site/i18n/tr.json dosyalarından üretildi. Elle düzenleme; değişiklik için site/ içini düzenleyip "node site/build.mjs" çalıştır. -->
 <html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nuri Buğra Demir</title>
-  <meta name="description" content="Nuri Buğra Demir — web geliştirme portföyü.">
   <meta name="theme-color" content="#0c0b0a">
+  <link rel="canonical" href="https://nuribugrademir.com/">
+
+  <link rel="alternate" hreflang="tr" href="https://nuribugrademir.com/">
+  <link rel="alternate" hreflang="en" href="https://nuribugrademir.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://nuribugrademir.com/">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=13">
-  <script type="module" src="assets/js/main.js?v=13"></script>
+  <link rel="stylesheet" href="/assets/css/main.css?v=15">
+  <script type="application/json" id="ui-strings">{"project_param":"proje","slide":"slayt","inspect_aria":"{title} projesini incele","placeholder":"Yer tutucu","placeholder_text":"{label} — gerçek ekran görüntüsü bekleniyor","placeholder_aria":"{label} görseli henüz eklenmedi","copied":"Adres panoya kopyalandı.","copy_failed":"Kopyalanamadı: {value}","compare_value":"Yüzde {n} sonra","fullpage_open":"Sayfanın tamamını göster","fullpage_close":"Sayfayı kısalt"}</script>
+  <title>Nuri Buğra Demir</title>
+  <meta name="description" content="Nuri Buğra Demir — web geliştirme portföyü.">
+  <script type="module" src="/assets/js/main.js?v=15"></script>
 </head>
-<body>
-  <a class="skip" href="#projeler">Projelere geç</a>
+<body data-home data-section="">
+  <a class="skip" href="#projects">Projelere geç</a>
 
   <nav class="site-nav" aria-label="Ana menü">
-    <a href="#projeler">Projeler</a>
-    <a href="/articles/">Yazılar</a>
-    <a href="#hakkimda">Hakkımda</a>
-    <a href="#iletisim">İletişim</a>
+    <a href="/" data-section="projects">Projeler</a>
+    <!-- Yazılar backend hazır olunca açılacak -->
+    <a href="/hakkimda" data-section="about">Hakkımda</a>
+    <a href="/iletisim" data-section="contact">İletişim</a>
+    <a class="lang-switch" href="/en/" hreflang="en" lang="en" aria-label="English">EN</a>
   </nav>
 
   <header class="intro">
@@ -28,7 +37,7 @@
   </header>
 
   <main>
-    <section class="showcase" id="projeler" aria-roledescription="carousel" aria-label="Projeler">
+    <section class="showcase" id="projects" data-route="/" data-alt-route="/en/" aria-roledescription="carousel" aria-label="Projeler">
       <div class="showcase__stage" data-stage tabindex="0" aria-label="Proje vitrini. Sol ve sağ ok tuşlarıyla proje değiştirin.">
         <div class="showcase__wheel" data-wheel></div>
         <div class="showcase__selector" aria-hidden="true"></div>
@@ -37,7 +46,7 @@
       <div class="showcase__bar">
         <div class="showcase__caption" data-caption aria-live="polite"></div>
         <div class="showcase__controls">
-          <a class="showcase__link" data-link href="#">Projeyi incele <span aria-hidden="true">→</span></a>
+          <a class="showcase__link" data-link href="/projeler/haus-pera/">Projeyi incele <span aria-hidden="true">→</span></a>
           <span class="showcase__count" data-count aria-hidden="true"></span>
           <button class="arrow" type="button" data-prev aria-label="Önceki proje">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
@@ -51,35 +60,23 @@
       <noscript><p class="showcase__noscript">Proje vitrini için JavaScript gerekiyor.</p></noscript>
     </section>
 
-    <section class="about" id="hakkimda" aria-labelledby="hakkimda-baslik">
+    <section class="about" id="about" data-route="/hakkimda" data-alt-route="/en/about" aria-labelledby="about-title">
       <figure class="about__portrait">
-        <img src="assets/img/portre.webp" width="746" height="933" loading="lazy"
-             alt="Nuri Buğra Demir, ahşap kaplamalı bir duvarın önünde kollarını kavuşturmuş duruyor">
+        <img src="/assets/img/portre.webp" width="900" height="1125" loading="lazy" alt="Nuri Buğra Demir, koyu ve kırmızı tonlu bir fonun önünde gözlüklü portre">
       </figure>
       <div class="about__text">
         <p class="kicker">Hakkımda</p>
-        <h2 id="hakkimda-baslik" class="section-title">Merhaba, ben Buğra.</h2>
-        <p>
-          Dokuz Eylül Üniversitesi'nde Bilgisayar Bilimleri okuyorum. Son dönemde ağırlığı backend
-          tarafına verdim: TypeScript, Express ve PostgreSQL ile bir isteğin sunucuda nasıl karşılandığını,
-          verinin nasıl saklanıp sunulduğunu öğreniyor ve uyguluyorum. Bu sitenin arka tarafını da
-          aynı süreçte kendim kuruyorum.
-        </p>
-        <p>
-          Bir yandan da yerel işletmeler için web projeleri yapıyorum. Haus Pera'nın QR menüsü ve
-          Jakovs'un web sitesi bunlardan ikisi; ikisi de şu an işletmelerde kullanılıyor.
-        </p>
+        <h2 id="about-title" class="section-title">Merhaba, ben Buğra.</h2>
+        <p>Dokuz Eylül Üniversitesi&#39;nde Bilgisayar Bilimleri okuyorum. Son dönemde ağırlığı backend tarafına verdim: TypeScript, Express ve PostgreSQL ile bir isteğin sunucuda nasıl karşılandığını, verinin nasıl saklanıp sunulduğunu öğreniyor ve uyguluyorum. Bu sitenin arka tarafını da aynı süreçte kendim kuruyorum.</p>
+        <p>Bir yandan da yerel işletmeler için web projeleri yapıyorum. Haus Pera&#39;nın QR menüsü ve Jakovs&#39;un web sitesi bunlardan ikisi; ikisi de şu an işletmelerde kullanılıyor.</p>
       </div>
     </section>
 
-    <section class="contact" id="iletisim" aria-labelledby="iletisim-baslik">
+    <section class="contact" id="contact" data-route="/iletisim" data-alt-route="/en/contact" aria-labelledby="contact-title">
       <div class="contact__head">
         <div>
-          <h2 id="iletisim-baslik" class="contact__title">İletişim</h2>
-          <p class="contact__sub">
-            Dokuz Eylül Üniversitesi, Bilgisayar Bilimleri<br>
-            TypeScript · Express · PostgreSQL
-          </p>
+          <h2 id="contact-title" class="contact__title">İletişim</h2>
+          <p class="contact__sub">Dokuz Eylül Üniversitesi, Bilgisayar Bilimleri<br>TypeScript · Express · PostgreSQL</p>
         </div>
         <div class="contact__actions">
           <a class="btn btn--primary" href="mailto:bugranuri.demir@gmail.com">
@@ -119,7 +116,7 @@
 
   <footer class="site-footer">
     <p>© 2026 Nuri Buğra Demir</p>
-    <a class="site-footer__top" href="#">Başa dön <span aria-hidden="true">↑</span></a>
+    <button class="site-footer__top" type="button" data-to-top>Başa dön <span aria-hidden="true">↑</span></button>
   </footer>
 </body>
 </html>

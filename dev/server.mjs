@@ -15,11 +15,26 @@ import { readFile, stat } from "node:fs/promises";
 import { extname, join, normalize, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { sampleArticles } from "./sample-articles.mjs";
+import { spawnSync } from "node:child_process";
+import { watch } from "node:fs";
 
 const PORT = Number(process.env.PORT ?? 5173);
 const MOCK = process.env.MOCK ?? "";
 const API_TARGET = process.env.API_TARGET ?? "";
 const ROOT = resolve(fileURLToPath(new URL("../frontend", import.meta.url)));
+const SITE = resolve(fileURLToPath(new URL("../site", import.meta.url)));
+
+// Sayfaları site/ şablonlarından üret; site/ içinde bir dosya değişince yeniden üret
+function build() {
+  const r = spawnSync(process.execPath, [join(SITE, "build.mjs")], { stdio: "inherit" });
+  if (r.status !== 0) console.error("  Sayfa üretimi başarısız — yukarıdaki hataya bak.");
+}
+build();
+let rebuildTimer;
+watch(SITE, { recursive: true }, () => {
+  clearTimeout(rebuildTimer);
+  rebuildTimer = setTimeout(build, 150);
+});
 
 const TYPES = {
   ".html": "text/html; charset=utf-8",
@@ -102,6 +117,13 @@ async function resolveFile(pathname) {
     if (info.isDirectory()) file = join(file, "index.html");
     await stat(file);
     return file;
+  } catch { /* aşağıda temiz adres denenir */ }
+
+  // Temiz adres: /hakkimda → hakkimda.html (Cloudflare Pages de böyle sunar)
+  try {
+    const html = join(ROOT, safe.replace(/\/$/, "") + ".html");
+    await stat(html);
+    return html;
   } catch {
     // /articles/:slug → yazı sayfası (yenilemede de çalışır)
     if (/^\/articles\/[^/]+\/?$/.test(pathname)) return join(ROOT, "articles", "article.html");
@@ -114,6 +136,13 @@ const server = createServer(async (req, res) => {
 
   if (pathname.startsWith("/api/")) {
     return API_TARGET ? proxyApi(req, res) : handleMockApi(req, res, pathname);
+  }
+
+  // /hakkimda.html → /hakkimda (yayındaki davranışla aynı); index.html → klasör
+  if (pathname.endsWith(".html") && !pathname.startsWith("/articles/")) {
+    const clean = pathname.endsWith("/index.html") ? pathname.slice(0, -"index.html".length) : pathname.slice(0, -5);
+    res.writeHead(301, { Location: clean + (req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "") });
+    return res.end();
   }
 
   // Dizin adresleri sondaki eğik çizgiye yönlendirilir (göreli yollar doğru çalışsın)

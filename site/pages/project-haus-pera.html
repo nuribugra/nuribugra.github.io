@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+  <title>{{t.haus.title}}</title>
+  <meta name="description" content="{{t.haus.description}}">
+  <link rel="stylesheet" href="/assets/css/project.css?v={{v}}">
+  <script type="module" src="/assets/js/project.js?v={{v}}"></script>
+</head>
+<body class="project-page">
+  <a class="skip" href="#content">{{t.common.skip_content}}</a>
+
+{{> topbar}}
+
+  <main id="content">
+    <header class="p-hero">
+      <div class="p-hero__stage">
+        <div class="p-hero__device">
+          <div class="screen screen--portrait p-hero__screen">
+            <img src="/assets/img/haus-pera-menu.webp" width="921" height="1718"
+                 alt="{{t.haus.img.hero}}" data-placeholder="{{t.haus.img.hero_ph}}">
+          </div>
+        </div>
+        <div class="p-hero__line" aria-hidden="true"></div>
+      </div>
+
+      <div class="p-hero__text">
+        <p class="p-kicker">{{t.haus.kicker}}</p>
+        <h1 class="p-title">Haus Pera Coffee <span>{{t.haus.subtitle}}</span></h1>
+        <p class="p-lede">{{t.haus.lede}}</p>
+        <dl class="p-facts">
+          <div><dt>{{t.haus.facts.scope_label}}</dt><dd>{{t.haus.facts.scope}}</dd></div>
+          <div><dt>{{t.haus.facts.stack_label}}</dt><dd>Next.js · PostgreSQL · Vercel</dd></div>
+        </dl>
+      </div>
+    </header>
+
+    <section class="p-section" aria-labelledby="guest">
+      <div class="p-section__head">
+        <p class="p-kicker">{{t.haus.guest.kicker}}</p>
+        <h2 id="guest" class="p-h2">{{t.haus.guest.title}}</h2>
+      </div>
+
+      <ol class="flow">
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame flow__frame--card">
+              <img src="/assets/img/haus-pera-qr-kart.webp" width="960" height="1353" loading="lazy"
+                   alt="{{t.haus.img.card}}" data-placeholder="{{t.haus.img.card_ph}}">
+            </div>
+            <figcaption>
+              <span class="flow__num">1</span>
+              <strong>{{t.haus.guest.s1_title}}</strong>
+              {{t.haus.guest.s1_text}}
+            </figcaption>
+          </figure>
+        </li>
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/haus-pera-menu.webp" width="921" height="1718" loading="lazy"
+                     alt="{{t.haus.img.menu}}" data-placeholder="{{t.haus.img.hero_ph}}">
+              </div>
+            </div>
+            <figcaption>
+              <span class="flow__num">2</span>
+              <strong>{{t.haus.guest.s2_title}}</strong>
+              {{t.haus.guest.s2_text}}
+            </figcaption>
+          </figure>
+        </li>
+      </ol>
+    </section>
+
+    <section class="p-section" aria-labelledby="owner">
+      <div class="p-section__head">
+        <p class="p-kicker">{{t.haus.owner.kicker}}</p>
+        <h2 id="owner" class="p-h2">{{t.haus.owner.title}}</h2>
+      </div>
+
+      <ol class="flow">
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/haus-pera-admin-fiyat.webp" width="921" height="1664" loading="lazy"
+                     alt="{{t.haus.img.admin}}" data-placeholder="{{t.haus.img.admin_ph}}">
+              </div>
+            </div>
+            <figcaption>
+              <span class="flow__num">1</span>
+              <strong>{{t.haus.owner.s1_title}}</strong>
+              {{t.haus.owner.s1_text}}
+            </figcaption>
+          </figure>
+        </li>
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/haus-pera-menu-urunler.webp" width="921" height="1700" loading="lazy"
+                     alt="{{t.haus.img.products}}" data-placeholder="{{t.haus.img.products_ph}}">
+              </div>
+            </div>
+            <figcaption>
+              <span class="flow__num">2</span>
+              <strong>{{t.haus.owner.s2_title}}</strong>
+              {{t.haus.owner.s2_text}}
+            </figcaption>
+          </figure>
+        </li>
+      </ol>
+    </section>
+
+    <section class="p-section p-section--tech" aria-labelledby="approach">
+      <div class="p-section__head">
+        <p class="p-kicker">{{t.haus.approach.kicker}}</p>
+        <h2 id="approach" class="p-h2">{{t.haus.approach.title}}</h2>
+      </div>
+
+      <div class="decisions">
+        <article class="decision">
+          <h3>{{t.haus.approach.d1_title}}</h3>
+          <p>{{t.haus.approach.d1_text}}</p>
+        </article>
+        <article class="decision">
+          <h3>{{t.haus.approach.d2_title}}</h3>
+          <p>{{t.haus.approach.d2_text}}</p>
+        </article>
+        <article class="decision">
+          <h3>{{t.haus.approach.d3_title}}</h3>
+          <p>{{t.haus.approach.d3_text}}</p>
+        </article>
+      </div>
+
+      <p class="p-next-note">{{t.haus.approach.next}}</p>
+    </section>
+
+    <nav class="p-footer" aria-label="{{t.common.projects_nav}}">
+      <a href="{{path.home}}?{{t.ui.project_param}}={{page.project}}"><span aria-hidden="true">←</span> {{t.common.all_projects}}</a>
+      <a class="p-footer__next" href="{{path.jakovs}}">
+        <span class="p-kicker">{{t.common.other_project}}</span>
+        Jakovs Coffee <span aria-hidden="true">→</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

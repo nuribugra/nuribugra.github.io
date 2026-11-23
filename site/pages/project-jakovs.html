@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+  <title>{{t.jakovs.title}}</title>
+  <meta name="description" content="{{t.jakovs.description}}">
+  <link rel="stylesheet" href="/assets/css/project.css?v={{v}}">
+  <script type="module" src="/assets/js/project.js?v={{v}}"></script>
+</head>
+<body class="project-page">
+  <a class="skip" href="#content">{{t.common.skip_content}}</a>
+
+{{> topbar}}
+
+  <main id="content">
+    <header class="p-hero p-hero--wide">
+      <div class="p-hero__stage">
+        <div class="p-hero__device">
+          <div class="screen screen--landscape p-hero__screen p-hero__screen--jakovs">
+            <img src="/assets/img/jakovs-home-1900.webp"
+                 srcset="/assets/img/jakovs-home-960.webp 960w, /assets/img/jakovs-home-1900.webp 1900w"
+                 sizes="(min-width: 900px) min(80vw, 1100px), 92vw"
+                 width="1900" height="862"
+                 alt="{{t.jakovs.img.hero}}" data-placeholder="{{t.jakovs.img.hero_ph}}">
+          </div>
+        </div>
+        <div class="p-hero__line" aria-hidden="true"></div>
+      </div>
+
+      <div class="p-hero__text">
+        <div>
+          <p class="p-kicker">{{t.jakovs.kicker}}</p>
+          <h1 class="p-title">Jakovs Coffee <span>{{t.jakovs.subtitle}}</span></h1>
+        </div>
+        <div class="p-hero__aside">
+          <p class="p-lede">{{t.jakovs.lede}}</p>
+          <dl class="p-facts">
+            <div><dt>{{t.jakovs.facts.start_label}}</dt><dd>{{t.jakovs.facts.start}}</dd></div>
+            <div><dt>{{t.jakovs.facts.focus_label}}</dt><dd>{{t.jakovs.facts.focus}}</dd></div>
+          </dl>
+          <a class="p-live" href="https://www.jakovs.com.tr/" target="_blank" rel="noopener">
+            {{t.jakovs.live}} <span aria-hidden="true">↗</span>
+            <span class="sr-only">{{t.jakovs.live_sr}}</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="p-section" aria-labelledby="before-after">
+      <div class="p-section__head">
+        <p class="p-kicker">{{t.jakovs.compare.kicker}}</p>
+        <h2 id="before-after" class="p-h2">{{t.jakovs.compare.title}}</h2>
+      </div>
+
+      <figure class="compare" data-compare>
+        <div class="compare__stage" data-compare-stage>
+          <img class="compare__img" src="/assets/img/jakovs-once.webp" width="1600" height="583" alt="{{t.jakovs.img.before}}">
+          <div class="compare__after" data-compare-after>
+            <img class="compare__img" src="/assets/img/jakovs-sonra.webp" width="1600" height="583" alt="{{t.jakovs.img.after}}">
+          </div>
+          <span class="compare__label compare__label--before" aria-hidden="true">{{t.jakovs.compare.before}}</span>
+          <span class="compare__label compare__label--after" aria-hidden="true">{{t.jakovs.compare.after}}</span>
+          <div class="compare__divider" aria-hidden="true"></div>
+          <button class="compare__handle" type="button" role="slider" data-compare-handle
+                  aria-label="{{t.jakovs.compare.slider}}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg>
+          </button>
+        </div>
+        <figcaption class="compare__hint">{{t.jakovs.compare.hint}}</figcaption>
+      </figure>
+
+      <ul class="changes">
+        <li><h3>{{t.jakovs.changes.c1_title}}</h3><p>{{t.jakovs.changes.c1_text}}</p></li>
+        <li><h3>{{t.jakovs.changes.c2_title}}</h3><p>{{t.jakovs.changes.c2_text}}</p></li>
+        <li><h3>{{t.jakovs.changes.c3_title}}</h3><p>{{t.jakovs.changes.c3_text}}</p></li>
+      </ul>
+    </section>
+
+    <section class="p-section" aria-labelledby="fullpage-title">
+      <div class="p-section__head">
+        <p class="p-kicker">{{t.jakovs.full.kicker}}</p>
+        <h2 id="fullpage-title" class="p-h2">{{t.jakovs.full.title}}</h2>
+        <p class="p-section__lede">{{t.jakovs.full.lede}}</p>
+      </div>
+
+      <figure class="fullpage" data-fullpage>
+        <div class="fullpage__frame" data-fullpage-frame id="full-page">
+          <img src="/assets/img/jakovs-tam-sayfa-1400.webp"
+               srcset="/assets/img/jakovs-tam-sayfa-800.webp 800w, /assets/img/jakovs-tam-sayfa-1400.webp 1400w"
+               sizes="(min-width: 900px) 760px, 92vw"
+               width="1400" height="3706" loading="lazy" alt="{{t.jakovs.img.full}}">
+        </div>
+        <button class="fullpage__toggle" type="button" data-fullpage-toggle aria-expanded="false" aria-controls="full-page">
+          {{t.ui.fullpage_open}}
+        </button>
+      </figure>
+    </section>
+
+    <section class="p-section" aria-labelledby="mobile">
+      <div class="p-section__head">
+        <p class="p-kicker">{{t.jakovs.mobile.kicker}}</p>
+        <h2 id="mobile" class="p-h2">{{t.jakovs.mobile.title}}</h2>
+      </div>
+
+      <ul class="flow flow--pair">
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/jakovs-mobil-ana.webp" width="921" height="1718" loading="lazy"
+                     alt="{{t.jakovs.img.m_home}}" data-placeholder="{{t.jakovs.img.m_home_ph}}">
+              </div>
+            </div>
+            <figcaption>
+              <strong>{{t.jakovs.mobile.s1_title}}</strong>
+              {{t.jakovs.mobile.s1_text}}
+            </figcaption>
+          </figure>
+        </li>
+        <li class="flow__step">
+          <figure class="flow__figure">
+            <div class="flow__frame">
+              <div class="screen screen--portrait flow__screen">
+                <img src="/assets/img/jakovs-mobil-galeri.webp" width="921" height="1710" loading="lazy"
+                     alt="{{t.jakovs.img.m_gallery}}" data-placeholder="{{t.jakovs.img.m_gallery_ph}}">
+              </div>
+            </div>
+            <figcaption>
+              <strong>{{t.jakovs.mobile.s2_title}}</strong>
+              {{t.jakovs.mobile.s2_text}}
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <nav class="p-footer" aria-label="{{t.common.projects_nav}}">
+      <a href="{{path.home}}?{{t.ui.project_param}}={{page.project}}"><span aria-hidden="true">←</span> {{t.common.all_projects}}</a>
+      <a class="p-footer__next" href="{{path.haus}}">
+        <span class="p-kicker">{{t.common.other_project}}</span>
+        Haus Pera Coffee <span aria-hidden="true">→</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

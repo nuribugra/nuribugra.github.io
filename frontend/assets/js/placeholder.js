@@ -1,3 +1,5 @@
+import { ui } from "./ui.js";
+
 // İşaretli yer tutucu: gerçek görsel yoksa ya da yüklenemezse gösterilir.
 // Beklenen dosya yolu görünür, böylece hangi görselin eksik olduğu belli olur.
 
@@ -5,14 +7,14 @@ export function placeholder(label, path) {
   const box = document.createElement("div");
   box.className = "screen__placeholder";
   const tag = document.createElement("strong");
-  tag.textContent = "Yer tutucu";
+  tag.textContent = ui("placeholder");
   const text = document.createElement("span");
-  text.textContent = `${label} — gerçek ekran görüntüsü bekleniyor`;
+  text.textContent = ui("placeholder_text", { label });
   const code = document.createElement("code");
   code.textContent = path ?? "";
   box.append(tag, text, code);
   box.setAttribute("role", "img");
-  box.setAttribute("aria-label", `${label} görseli henüz eklenmedi`);
+  box.setAttribute("aria-label", ui("placeholder_aria", { label }));
   return box;
 }
 

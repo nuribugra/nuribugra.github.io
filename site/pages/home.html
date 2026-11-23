@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+  <title>{{t.home.title}}</title>
+  <meta name="description" content="{{t.home.description}}">
+  <script type="module" src="/assets/js/main.js?v={{v}}"></script>
+</head>
+<body data-home data-section="{{page.section}}">
+  <a class="skip" href="#projects">{{t.common.skip_projects}}</a>
+
+{{> nav}}
+
+  <header class="intro">
+    <h1 class="intro__name">{{{t.home.name_html}}}</h1>
+    <p class="intro__lede">{{t.home.lede}}</p>
+  </header>
+
+  <main>
+    <section class="showcase" id="projects" data-route="{{path.home}}" data-alt-route="{{altpath.home}}" aria-roledescription="carousel" aria-label="{{t.showcase.label}}">
+      <div class="showcase__stage" data-stage tabindex="0" aria-label="{{t.showcase.stage_label}}">
+        <div class="showcase__wheel" data-wheel></div>
+        <div class="showcase__selector" aria-hidden="true"></div>
+      </div>
+
+      <div class="showcase__bar">
+        <div class="showcase__caption" data-caption aria-live="polite"></div>
+        <div class="showcase__controls">
+          <a class="showcase__link" data-link href="{{path.haus}}">{{t.showcase.inspect}} <span aria-hidden="true">→</span></a>
+          <span class="showcase__count" data-count aria-hidden="true"></span>
+          <button class="arrow" type="button" data-prev aria-label="{{t.showcase.prev}}">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="arrow" type="button" data-next aria-label="{{t.showcase.next}}">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <noscript><p class="showcase__noscript">{{t.showcase.noscript}}</p></noscript>
+    </section>
+
+    <section class="about" id="about" data-route="{{path.about}}" data-alt-route="{{altpath.about}}" aria-labelledby="about-title">
+      <figure class="about__portrait">
+        <img src="/assets/img/portre.webp" width="900" height="1125" loading="lazy" alt="{{t.about.portrait_alt}}">
+      </figure>
+      <div class="about__text">
+        <p class="kicker">{{t.about.kicker}}</p>
+        <h2 id="about-title" class="section-title">{{t.about.title}}</h2>
+        <p>{{t.about.p1}}</p>
+        <p>{{t.about.p2}}</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" data-route="{{path.contact}}" data-alt-route="{{altpath.contact}}" aria-labelledby="contact-title">
+      <div class="contact__head">
+        <div>
+          <h2 id="contact-title" class="contact__title">{{t.contact.title}}</h2>
+          <p class="contact__sub">{{t.contact.sub_1}}<br>{{t.contact.sub_2}}</p>
+        </div>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:bugranuri.demir@gmail.com">
+            {{t.contact.send}} <span aria-hidden="true">→</span>
+          </a>
+          <button class="btn btn--ghost" type="button" data-copy="bugranuri.demir@gmail.com">
+            {{t.contact.copy}}
+          </button>
+          <span class="contact__status" data-copy-status role="status" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <dl class="contact__grid">
+        <div class="contact__item">
+          <dt>{{t.contact.email}}</dt>
+          <dd><a href="mailto:bugranuri.demir@gmail.com">bugranuri.demir@gmail.com</a></dd>
+        </div>
+        <div class="contact__item">
+          <dt>GitHub</dt>
+          <dd>
+            <a href="https://github.com/nuribugra" target="_blank" rel="noopener">
+              github.com/nuribugra <span aria-hidden="true">↗</span><span class="sr-only"> {{t.common.new_tab}}</span>
+            </a>
+          </dd>
+        </div>
+        <div class="contact__item">
+          <dt>LinkedIn</dt>
+          <dd>
+            <a href="https://www.linkedin.com/in/nuribugrademir" target="_blank" rel="noopener">
+              linkedin.com/in/nuribugrademir <span aria-hidden="true">↗</span><span class="sr-only"> {{t.common.new_tab}}</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+{{> footer}}
+</body>
+</html>

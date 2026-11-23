@@ -1,0 +1,3 @@
+# Cloudflare Pages yönlendirmeleri
+# Yazı adresleri (/articles/express-ile-ilk-endpoint) tek yazı sayfasından sunulur; sayfa yenilemede de açılır.
+/articles/*  /articles/article.html  200

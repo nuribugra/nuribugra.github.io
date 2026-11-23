@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+  <title>{{t.articles.title}} · {{t.site.name}}</title>
+  <meta name="description" content="{{t.articles.description}}">
+  <link rel="stylesheet" href="/assets/css/articles.css?v={{v}}">
+  <script type="module" src="/assets/js/articles.js?v={{v}}"></script>
+</head>
+<body>
+  <a class="skip" href="#content">{{t.common.skip_content}}</a>
+
+  <header class="sub-header">
+    <a class="sub-header__name" href="{{path.home}}">{{t.site.name}}</a>
+{{> nav}}
+  </header>
+
+  <main id="content" class="articles">
+    <h1 class="articles__title">{{t.articles.title}}</h1>
+    <ol class="article-list" data-articles aria-label="{{t.articles.list_label}}"></ol>
+    <div data-articles-status aria-live="polite"></div>
+    <noscript><p class="state__text">{{t.articles.noscript}}</p></noscript>
+  </main>
+
+{{> footer}}
+</body>
+</html>

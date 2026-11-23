@@ -5,6 +5,7 @@ const SWIPE_THRESHOLD = 48;   // px — bu kadar yatay sürüklenince proje değ
 const DRAG_LOCK = 10;         // px — jestin yatay mı dikey mi olduğuna karar verilen mesafe
 
 import { placeholder as markedPlaceholder } from "./placeholder.js";
+import { ui } from "./ui.js";
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -63,8 +64,8 @@ export function createShowcase(root, projects) {
   const prevBtn = root.querySelector("[data-prev]");
   const nextBtn = root.querySelector("[data-next]");
 
-  // /?proje=jakovs#projeler gibi bir adresle belirli projede açılabilir
-  const requested = new URLSearchParams(location.search).get("proje");
+  // /?proje=jakovs (TR) ya da /en/?project=jakovs (EN) adresiyle belirli projede açılabilir
+  const requested = new URLSearchParams(location.search).get(ui("project_param"));
   let active = Math.max(0, items.findIndex((p) => p.slug === requested));
   let drag = 0; // sürükleme sırasında kesirli kayma (slayt cinsinden)
 
@@ -72,7 +73,7 @@ export function createShowcase(root, projects) {
     const slide = el("div", "slide");
     slide.dataset.index = String(i);
     slide.setAttribute("role", "group");
-    slide.setAttribute("aria-roledescription", "slayt");
+    slide.setAttribute("aria-roledescription", ui("slide"));
     slide.setAttribute("aria-label", `${i + 1} / ${items.length}: ${project.title}`);
     slide.append(renderScreen(project));
     wheel.append(slide);
@@ -104,8 +105,8 @@ export function createShowcase(root, projects) {
 
     caption.replaceChildren(renderCaption(project));
     count.textContent = `${pad(active + 1)} / ${pad(items.length)}`;
-    link.href = `/projeler/${project.slug}/`;
-    link.setAttribute("aria-label", `${project.title} projesini incele`);
+    link.href = project.href;
+    link.setAttribute("aria-label", ui("inspect_aria", { title: project.title }));
     prevBtn.disabled = active === 0;
     nextBtn.disabled = active === items.length - 1;
   }
