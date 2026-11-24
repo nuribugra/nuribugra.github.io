@@ -67,7 +67,7 @@
       "stack_label": "Stack"
     },
     "guest": {
-      "kicker": "01 — Guest experience",
+      "kicker": "02 — Guest experience",
       "title": "From the table to the menu",
       "s1_title": "Scan the code",
       "s1_text": "Every table has a QR card that leads to the menu; scanning it with the phone camera is all it takes.",
@@ -75,7 +75,7 @@
       "s2_text": "It opens in the browser, with no app to install. Categories and search are on a single screen."
     },
     "owner": {
-      "kicker": "02 — Business management",
+      "kicker": "03 — Business management",
       "title": "Prices in the owner's hands",
       "s1_title": "Prices are updated in the panel",
       "s1_text": "The business signs in to its password-protected management panel and changes the price of a product. Here, the hot Latte price is being edited.",
@@ -83,7 +83,7 @@
       "s2_text": "The change appears on the menu as soon as it's saved; the next guest to scan the code sees the Latte at its new price. No developer or reprinting needed."
     },
     "approach": {
-      "kicker": "03 — Approach",
+      "kicker": "04 — Approach",
       "title": "A simple foundation",
       "d1_title": "One application",
       "d1_text": "The menu guests see and the management panel the business uses run together in a single Next.js application, so maintenance and updates happen in one place.",
@@ -103,14 +103,30 @@
       "admin_ph": "Management panel, editing a price",
       "products": "The coffee list on the guest menu: Latte shown at 205.00 TL hot and 215.00 TL iced",
       "products_ph": "Product list on the menu"
-    }
+    },
+    "role": {
+      "kicker": "01 — My role",
+      "title": "From the venue to the menu",
+      "lede": "Digital menus in this field are usually bought from corporate software firms, and even a simple price update can come with an extra fee. My aim was to offer a more affordable, more carefully made alternative that lets the business manage its own menu.",
+      "r1_title": "Needs analysis",
+      "r1_text": "I visited the venue to see how it runs and met with the owner to define what the business needed.",
+      "r2_title": "Design",
+      "r2_text": "I planned the flow of the menu and the management panel, and built a colour scheme that matches the venue's interior.",
+      "r3_title": "Technical decisions",
+      "r3_text": "I chose the technologies and decided how the system would be structured.",
+      "r4_title": "Development and launch",
+      "r4_text": "I carried out the coding with AI-assisted development tools, and completed the database setup and launch with them."
+    },
+    "live_url": "https://hauspera-qr-menu.vercel.app/",
+    "live": "View the live menu",
+    "live_sr": "(opens in a new tab)"
   },
   "jakovs": {
     "title": "Jakovs Coffee — Website redesign · Nuri Buğra Demir",
     "description": "Reworking Jakovs Coffee's template website around the venue's own identity.",
     "kicker": "Redesign",
     "subtitle": "Website redesign",
-    "lede": "The business had bought its website as a ready-made service through Turhost. I reworked that template site around the venue's warm atmosphere and its stone reliefs, rebuilding the visual hierarchy and the gallery layout from the ground up.",
+    "lede": "The business had bought its website as a ready-made service built with Turhost's site builder. I reworked that site around the venue's warm atmosphere and its stone reliefs, rebuilding the visual hierarchy and the gallery layout from the ground up.",
     "facts": {
       "start_label": "Starting point",
       "start": "Turhost template website",
@@ -120,7 +136,7 @@
     "live": "Visit the live site",
     "live_sr": "(jakovs.com.tr, opens in a new tab)",
     "compare": {
-      "kicker": "01 — Before and after",
+      "kicker": "02 — Before and after",
       "title": "From a stock template to the venue's own identity",
       "before": "Before",
       "after": "After",
@@ -136,12 +152,12 @@
       "c3_text": "The venue's emblem replaced a text-only logo, and the headline and introduction in the hero area were separated."
     },
     "full": {
-      "kicker": "02 — The new home page",
+      "kicker": "03 — The new home page",
       "title": "One flow, top to bottom",
       "lede": "After the hero area come the service approach, photos from the venue and the contact details. The gallery brings different corners of the venue and its products together in one consistent layout, and the page closes with a photo taken in front of the stone relief wall."
     },
     "mobile": {
-      "kicker": "03 — Mobile",
+      "kicker": "04 — Mobile",
       "title": "A single column on the phone",
       "s1_title": "Home page",
       "s1_text": "The menu links collapse into a single button, and the hero area and introduction stack into one column.",
@@ -158,6 +174,16 @@
       "m_home_ph": "Jakovs mobile home page",
       "m_gallery": "The Jakovs photo gallery on a phone: introduction text and a two-column photo grid",
       "m_gallery_ph": "Jakovs mobile gallery"
+    },
+    "role": {
+      "kicker": "01 — My role",
+      "title": "Getting the most out of a limited platform",
+      "r1_title": "Scope",
+      "r1_text": "I first proposed a site built from scratch. The business preferred to make use of the template service it had already paid for, so I worked within that platform.",
+      "r2_title": "Visual identity",
+      "r2_text": "I reworked the logo with a transparent background, and chose deep green and cream tones to suit the venue's Greek theme and its understated character.",
+      "r3_title": "Beyond the panel",
+      "r3_text": "The site builder applied one colour to every piece of text on a page. Where the panel fell short, I added embedded HTML and CSS to control colour and layout the way I wanted."
     }
   },
   "articles": {

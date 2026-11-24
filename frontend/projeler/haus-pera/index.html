@@ -30,12 +30,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css?v=17">
+  <link rel="stylesheet" href="/assets/css/main.css?v=18">
   <script type="application/json" id="ui-strings">{"project_param":"proje","slide":"slayt","inspect_aria":"{title} projesini incele","placeholder":"Yer tutucu","placeholder_text":"{label} — gerçek ekran görüntüsü bekleniyor","placeholder_aria":"{label} görseli henüz eklenmedi","copied":"Adres panoya kopyalandı.","copy_failed":"Kopyalanamadı: {value}","compare_value":"Yüzde {n} sonra","fullpage_open":"Sayfanın tamamını göster","fullpage_close":"Sayfayı kısalt"}</script>
   <title>Haus Pera Coffee — QR Menü · Nuri Buğra Demir</title>
   <meta name="description" content="Haus Pera Coffee için QR kodla açılan mobil menü ve yönetim paneli.">
-  <link rel="stylesheet" href="/assets/css/project.css?v=17">
-  <script type="module" src="/assets/js/project.js?v=17"></script>
+  <link rel="stylesheet" href="/assets/css/project.css?v=18">
+  <script type="module" src="/assets/js/project.js?v=18"></script>
 </head>
 <body class="project-page">
   <a class="skip" href="#content">İçeriğe geç</a>
@@ -68,12 +68,33 @@
           <div><dt>Kapsam</dt><dd>Mobil menü ve yönetim paneli</dd></div>
           <div><dt>Altyapı</dt><dd>Next.js · PostgreSQL · Vercel</dd></div>
         </dl>
+
+        <a class="p-live" href="https://hauspera-qr-menu.vercel.app/" target="_blank" rel="noopener">
+          Canlı menüyü görüntüle <span aria-hidden="true">↗</span>
+          <span class="sr-only">(yeni sekmede açılır)</span>
+        </a>
+
       </div>
     </header>
 
+    <section class="p-section" aria-labelledby="role">
+      <div class="p-section__head">
+        <p class="p-kicker">01 — Rolüm</p>
+        <h2 id="role" class="p-h2">Mekândan menüye</h2>
+        <p class="p-section__lede">Bu alanda dijital menü hizmetleri çoğunlukla kurumsal yazılım firmalarından alınıyor ve fiyat güncellemesi gibi basit değişiklikler bile ek ücrete bağlanabiliyor. Amacım, işletmenin menüsünü kendisinin yönetebildiği, daha düşük maliyetli ve daha özenli bir alternatif sunmaktı.</p>
+      </div>
+
+      <ul class="changes changes--four">
+        <li><h3>İhtiyaç analizi</h3><p>Mekânı ziyaret edip işleyişini yerinde inceledim; işletme sahibiyle görüşerek ihtiyaçlarını belirledim.</p></li>
+        <li><h3>Tasarım</h3><p>Menünün ve yönetim panelinin akışını planladım; mekânın iç mekân tonlarıyla uyumlu bir renk şeması oluşturdum.</p></li>
+        <li><h3>Teknik kararlar</h3><p>Kullanılacak teknolojileri ve sistemin yapısını belirledim.</p></li>
+        <li><h3>Geliştirme ve yayın</h3><p>Kodlamayı yapay zekâ destekli geliştirme araçlarıyla yürüttüm; veritabanı bağlantısını ve yayına alma sürecini bu araçlarla birlikte tamamladım.</p></li>
+      </ul>
+    </section>
+
     <section class="p-section" aria-labelledby="guest">
       <div class="p-section__head">
-        <p class="p-kicker">01 — Misafir deneyimi</p>
+        <p class="p-kicker">02 — Misafir deneyimi</p>
         <h2 id="guest" class="p-h2">Masadan menüye</h2>
       </div>
 
@@ -111,7 +132,7 @@
 
     <section class="p-section" aria-labelledby="owner">
       <div class="p-section__head">
-        <p class="p-kicker">02 — İşletme yönetimi</p>
+        <p class="p-kicker">03 — İşletme yönetimi</p>
         <h2 id="owner" class="p-h2">Fiyatlar işletmenin elinde</h2>
       </div>
 
@@ -151,7 +172,7 @@
 
     <section class="p-section p-section--tech" aria-labelledby="approach">
       <div class="p-section__head">
-        <p class="p-kicker">03 — Yaklaşım</p>
+        <p class="p-kicker">04 — Yaklaşım</p>
         <h2 id="approach" class="p-h2">Sade bir altyapı</h2>
       </div>
 

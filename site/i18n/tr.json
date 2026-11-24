@@ -67,7 +67,7 @@
       "stack_label": "Altyapı"
     },
     "guest": {
-      "kicker": "01 — Misafir deneyimi",
+      "kicker": "02 — Misafir deneyimi",
       "title": "Masadan menüye",
       "s1_title": "Kodu okutun",
       "s1_text": "Her masada menüye yönlendiren bir QR kart bulunuyor; telefon kamerasıyla okutmak yeterli.",
@@ -75,7 +75,7 @@
       "s2_text": "Herhangi bir uygulama gerektirmeden tarayıcıda açılıyor. Kategoriler ve arama tek ekranda."
     },
     "owner": {
-      "kicker": "02 — İşletme yönetimi",
+      "kicker": "03 — İşletme yönetimi",
       "title": "Fiyatlar işletmenin elinde",
       "s1_title": "Fiyat panelden güncellenir",
       "s1_text": "İşletme, şifreyle korunan yönetim paneline giriş yapıp ilgili ürünün fiyatını değiştiriyor. Örnekte Latte'nin sıcak fiyatı düzenleniyor.",
@@ -83,7 +83,7 @@
       "s2_text": "Değişiklik kaydedildiği anda menüye yansıyor; kodu okutan bir sonraki misafir Latte'yi güncel fiyatıyla görüyor. Geliştiriciye ya da yeniden baskıya gerek kalmıyor."
     },
     "approach": {
-      "kicker": "03 — Yaklaşım",
+      "kicker": "04 — Yaklaşım",
       "title": "Sade bir altyapı",
       "d1_title": "Tek uygulama",
       "d1_text": "Misafirlerin gördüğü menü ve işletmenin yönetim paneli, Next.js ile geliştirilmiş tek bir uygulamada bir arada çalışıyor. Bakım ve güncellemeler tek bir yerden yapılıyor.",
@@ -103,14 +103,30 @@
       "admin_ph": "Yönetim paneli, fiyat düzenleme",
       "products": "Müşteri menüsünde Kahveler listesi: Latte sıcak 205,00 TL, soğuk 215,00 TL olarak görünüyor",
       "products_ph": "Menüde ürün listesi"
-    }
+    },
+    "role": {
+      "kicker": "01 — Rolüm",
+      "title": "Mekândan menüye",
+      "lede": "Bu alanda dijital menü hizmetleri çoğunlukla kurumsal yazılım firmalarından alınıyor ve fiyat güncellemesi gibi basit değişiklikler bile ek ücrete bağlanabiliyor. Amacım, işletmenin menüsünü kendisinin yönetebildiği, daha düşük maliyetli ve daha özenli bir alternatif sunmaktı.",
+      "r1_title": "İhtiyaç analizi",
+      "r1_text": "Mekânı ziyaret edip işleyişini yerinde inceledim; işletme sahibiyle görüşerek ihtiyaçlarını belirledim.",
+      "r2_title": "Tasarım",
+      "r2_text": "Menünün ve yönetim panelinin akışını planladım; mekânın iç mekân tonlarıyla uyumlu bir renk şeması oluşturdum.",
+      "r3_title": "Teknik kararlar",
+      "r3_text": "Kullanılacak teknolojileri ve sistemin yapısını belirledim.",
+      "r4_title": "Geliştirme ve yayın",
+      "r4_text": "Kodlamayı yapay zekâ destekli geliştirme araçlarıyla yürüttüm; veritabanı bağlantısını ve yayına alma sürecini bu araçlarla birlikte tamamladım."
+    },
+    "live_url": "https://hauspera-qr-menu.vercel.app/",
+    "live": "Canlı menüyü görüntüle",
+    "live_sr": "(yeni sekmede açılır)"
   },
   "jakovs": {
     "title": "Jakovs Coffee — Web sitesi yenilemesi · Nuri Buğra Demir",
     "description": "Jakovs Coffee'nin hazır web sitesinin mekânın kimliğine göre yeniden düzenlenmesi.",
     "kicker": "Yeniden tasarım",
     "subtitle": "Web sitesi yenilemesi",
-    "lede": "İşletme, web sitesini Turhost üzerinden hazır bir hizmet olarak almıştı. Bu hazır siteyi, mekânın sıcak atmosferinden ve taş rölyeflerinden yola çıkarak yeniden düzenledim; görsel hiyerarşiyi ve galeri düzenini baştan kurdum.",
+    "lede": "İşletme, web sitesini Turhost'un site oluşturucusuyla hazır bir hizmet olarak almıştı. Bu siteyi, mekânın sıcak atmosferinden ve taş rölyeflerinden yola çıkarak yeniden düzenledim; görsel hiyerarşiyi ve galeri düzenini baştan kurdum.",
     "facts": {
       "start_label": "Başlangıç",
       "start": "Turhost hazır web sitesi",
@@ -120,7 +136,7 @@
     "live": "Canlı siteyi görüntüle",
     "live_sr": "(jakovs.com.tr, yeni sekmede açılır)",
     "compare": {
-      "kicker": "01 — Önce ve sonra",
+      "kicker": "02 — Önce ve sonra",
       "title": "Hazır şablondan mekânın kendi kimliğine",
       "before": "Önce",
       "after": "Sonra",
@@ -136,12 +152,12 @@
       "c3_text": "Yazı ile oluşturulmuş logo yerine mekânın amblemi öne çıkarıldı; karşılama alanındaki başlık ve tanıtım metni birbirinden ayrıldı."
     },
     "full": {
-      "kicker": "02 — Yeni ana sayfa",
+      "kicker": "03 — Yeni ana sayfa",
       "title": "Baştan sona bir akış",
       "lede": "Karşılama alanından sonra hizmet anlayışı, mekândan kareler ve iletişim bilgileri sırasıyla geliyor. Galeri, mekânın farklı köşelerini ve ürünlerini aynı düzende bir araya getiriyor; sayfa, taş rölyefli duvarın önünde çekilmiş bir fotoğrafla kapanıyor."
     },
     "mobile": {
-      "kicker": "03 — Mobil görünüm",
+      "kicker": "04 — Mobil görünüm",
       "title": "Telefonda tek sütun",
       "s1_title": "Ana sayfa",
       "s1_text": "Menü bağlantıları tek bir düğmede toplanıyor; karşılama alanı ve tanıtım metni ekrana tek sütun halinde yerleşiyor.",
@@ -158,6 +174,16 @@
       "m_home_ph": "Jakovs mobil ana sayfa",
       "m_gallery": "Jakovs resim galerisinin telefondaki görünümü: tanıtım yazısı ve iki sütunlu fotoğraf ızgarası",
       "m_gallery_ph": "Jakovs mobil galeri"
+    },
+    "role": {
+      "kicker": "01 — Rolüm",
+      "title": "Sınırlı bir altyapıdan en iyisini çıkarmak",
+      "r1_title": "Kapsam",
+      "r1_text": "İlk olarak sıfırdan kodlanmış bir site önerdim. İşletme, satın aldığı hazır site hizmetini değerlendirmek istediği için çalışmayı bu altyapı üzerinde yürüttüm.",
+      "r2_title": "Görsel kimlik",
+      "r2_text": "Logoyu şeffaf arka planla yeniden hazırladım. Mekânın Yunan temasına ve ağırbaşlı havasına uygun olarak koyu yeşil ve krem tonlarını seçtim.",
+      "r3_title": "Panelin ötesinde",
+      "r3_text": "Site oluşturucu, bir sayfadaki tüm metinleri tek renkte sunuyordu. Panelin yetmediği yerlerde sayfaya gömülü HTML ve CSS ekleyerek renk ve yerleşimi istediğim gibi düzenledim."
     }
   },
   "articles": {

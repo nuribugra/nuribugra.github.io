@@ -32,8 +32,29 @@
           <div><dt>{{t.haus.facts.scope_label}}</dt><dd>{{t.haus.facts.scope}}</dd></div>
           <div><dt>{{t.haus.facts.stack_label}}</dt><dd>Next.js · PostgreSQL · Vercel</dd></div>
         </dl>
+{{#if t.haus.live_url}}
+        <a class="p-live" href="{{t.haus.live_url}}" target="_blank" rel="noopener">
+          {{t.haus.live}} <span aria-hidden="true">↗</span>
+          <span class="sr-only">{{t.haus.live_sr}}</span>
+        </a>
+{{/if}}
       </div>
     </header>
+
+    <section class="p-section" aria-labelledby="role">
+      <div class="p-section__head">
+        <p class="p-kicker">{{t.haus.role.kicker}}</p>
+        <h2 id="role" class="p-h2">{{t.haus.role.title}}</h2>
+        <p class="p-section__lede">{{t.haus.role.lede}}</p>
+      </div>
+
+      <ul class="changes changes--four">
+        <li><h3>{{t.haus.role.r1_title}}</h3><p>{{t.haus.role.r1_text}}</p></li>
+        <li><h3>{{t.haus.role.r2_title}}</h3><p>{{t.haus.role.r2_text}}</p></li>
+        <li><h3>{{t.haus.role.r3_title}}</h3><p>{{t.haus.role.r3_text}}</p></li>
+        <li><h3>{{t.haus.role.r4_title}}</h3><p>{{t.haus.role.r4_text}}</p></li>
+      </ul>
+    </section>
 
     <section class="p-section" aria-labelledby="guest">
       <div class="p-section__head">
